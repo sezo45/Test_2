@@ -1083,6 +1083,7 @@ header.scrolled .head {
     position: relative;
     transition: 500ms;
     img {
+      object-fit: cover;
       transition: 300ms;
       &:hover{
         transform: scale(1.025);
@@ -1102,12 +1103,17 @@ header.scrolled .head {
         color: #ffffff;
         font-family: "Cal Sans", sans-serif;
         font-weight: 400;
+        transition: 300ms;
+        &:hover{
+          color: #fed403;
+        }
       }
       p {
         font-size: 17px;
         color: #ffffff;
         font-family: "Golos Text", sans-serif;
         font-weight: 400;
+        transition: 300ms;
       }
       button{
         background-color: transparent;
@@ -1116,6 +1122,10 @@ header.scrolled .head {
         font-family: "Golos Text", sans-serif;
         font-weight: 400;
         color: #ffffff;
+        transition: 300ms;
+        &:hover{
+          color: #fed403;
+        }
       }
       transition: 300ms;
       &:hover{
