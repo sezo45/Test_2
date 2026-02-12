@@ -1,0 +1,1126 @@
+/*   font-family: "Golos Text", sans-serif; */
+/*   font-family: "Inter Tight", sans-serif; */
+/*   font-family: "Cal Sans", sans-serif; */
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+header {
+  transition: all 0.4s ease-in-out;
+  padding: 20px;
+  .head {
+    width: 100%;
+    background-color: #313131;
+    /* الاضافة */
+    transition: all 0.4s ease-in-out;
+    padding: 0 2px;
+    border-radius: 5px;
+    nav {
+      font-family: "Golos Text", sans-serif;
+      .yell {
+        color: #ffffff;
+      }
+      a {
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 16px;
+        transition: 400ms;
+        &:hover {
+          color: #fed403;
+          transform: scale(1.2);
+        }
+      }
+      @media (max-width: 1024px) {
+        display: none !important;
+      }
+    }
+    svg {
+      color: white;
+      cursor: pointer;
+      @media (max-width: 767px) {
+        width: 30px;
+      }
+      &:hover {
+        color: #fed403 !important;
+      }
+    }
+    button {
+      width: 182px;
+      height: 50px;
+      font-size: 16px;
+      font-weight: 500;
+      font-family: "Golos Text", sans-serif;
+      background-color: #fed403;
+      border-radius: 5px;
+      transition: 300ms;
+      &:hover {
+        color: #ffffff;
+        transform: scale(1.05);
+      }
+      @media (max-width: 1024px) {
+        display: none !important;
+      }
+    }
+  }
+}
+header.scrolled {
+  padding: 0;
+}
+header.scrolled .head {
+  width: 100%;
+  border-radius: 0;
+  background-color: #313131;
+}
+.bghome {
+  /* height: 100vh; */
+  background-image: url(./images/engineer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  div {
+    padding-top: 180px;
+    /* padding-left: 100px; */
+    padding-bottom: 60px;
+    @media (max-width: 767px) {
+      padding-top: 150px;
+      padding-bottom: 120px;
+      padding-left: 18px;
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      padding-top: 220px;
+      padding-bottom: 100px;
+      padding-left: 20px;
+    }
+    .p1 {
+      font-size: 13px;
+      font-weight: 400;
+      font-family: "Golos Text", sans-serif;
+      letter-spacing: 1px;
+      color: #fed403 !important;
+      @media (max-width: 767px) {
+        width: 300px;
+        font-size: 8px;
+      }
+      /* @media (min-width: 768px) and (max-width: 1023px) {
+        width: 200px;
+        font-size: 10px;
+      } */
+    }
+    h1 {
+      max-width: 650px !important;
+      font-size: 80px;
+      font-weight: 400;
+      color: #ffffff;
+      font-family: "Cal Sans", sans-serif;
+      @media (max-width: 767px) {
+        width: 220px;
+        font-size: 25px;
+      }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 50px !important;
+        width: 500px;
+      }
+    }
+    .line {
+      color: #ffffff;
+      max-width: 500px !important;
+      @media (max-width: 767px) {
+        width: 200px;
+      }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        width: 410px;
+      }
+    }
+    .p2 {
+      max-width: 550px !important;
+      font-size: 15px;
+      font-weight: 400;
+      font-family: "Golos Text", sans-serif;
+      color: #d6d3d2;
+      @media (max-width: 767px) {
+        font-size: 9px;
+        width: 280px;
+      }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        width: 490px;
+      }
+    }
+    button {
+      width: 182px;
+      height: 50px;
+      font-size: 16px;
+      font-weight: 400;
+      font-family: "Golos Text", sans-serif;
+      background-color: #fed403;
+      border-radius: 7px;
+      transition: all 400ms;
+      &:hover {
+        background-color: #313131;
+        color: #ffffff;
+      }
+    }
+  }
+  .choose {
+    max-width: 300px;
+    background-color: #313131a8;
+    color: #ffffff;
+    right: 30px;
+    bottom: 15px;
+    border-radius: 3%;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 400;
+    @media (max-width: 1023px) {
+      display: none !important;
+    }
+    .first {
+      cursor: pointer;
+      font-size: 18px;
+    }
+    .second {
+      cursor: pointer;
+      font-size: 18px;
+      color: #999695;
+      transition: 400ms;
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+}
+.sec_2 {
+  .container {
+    @media (min-width: 1025px) {
+      max-width: 1300px !important;
+    }
+    .bgg {
+      &:hover {
+        .animate__animated {
+          animation: animate__rubberBand !important;
+        }
+      }
+      background-color: #313131;
+      .all_images {
+        width: 75px;
+        height: 60px;
+        border-radius: 5px;
+        background-color: #3c3c3c !important;
+        overflow: hidden;
+      }
+      h3 {
+        font-size: 20px;
+        font-weight: 400;
+        font-family: "Cal Sans", sans-serif;
+        color: #ffffff;
+        @media (max-width: 767px) {
+          font-size: 20px;
+        }
+        @media (min-width: 992px) {
+          font-size: 22px;
+          font-weight: 400;
+        }
+      }
+      hr {
+        width: 300px;
+        color: #ffffff;
+      }
+      p {
+        max-width: 100%;
+        padding-left: 15px;
+        padding-bottom: 25px;
+        font-size: 18px;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 400;
+        color: #d6d6d6;
+        @media (max-width: 767px) {
+          width: 300px !important;
+        }
+        @media (min-width: 768px) and(max-width: 992px) {
+          /* width: 200px !important;       */
+        }
+        @media (min-width: 1050px) {
+          font-size: 16px;
+          width: 350px !important;
+          padding-right: 15px !important;
+          padding-bottom: 25px !important;
+        }
+      }
+    }
+  }
+}
+.sec_3 {
+  .container {
+    @media (min-width: 1025px) {
+      max-width: 1300px !important;
+    }
+    .img1 {
+      @media (max-width: 992px) {
+        max-width: 100% !important;
+      }
+    }
+    .right {
+      .divtop {
+        .p1 {
+          color: #59585d;
+          text-transform: uppercase;
+          font-size: 16px;
+          font-size: 14px;
+          font-weight: 400;
+          font-family: "Golos Text", sans-serif;
+          svg {
+            width: 20px;
+            color: #fed403;
+          }
+        }
+        h4 {
+          /* font-size: 40px !important; */
+          font-family: "Cal Sans", sans-serif;
+          font-weight: 400;
+          @media (max-width: 992px) {
+            font-size: 30px;
+          }
+        }
+        p2 {
+          font-weight: 400;
+          font-family: "Golos Text", sans-serif;
+          color: #59585d;
+          font-size: 14px;
+          @media (max-width: 767px) {
+            width: 250px;
+          }
+          @media (min-width: 768px) and (max-width: 992px) {
+            width: 500px;
+          }
+        }
+      }
+      .divbottom {
+        .text3 {
+          h5 {
+            cursor: pointer;
+            font-size: 16px !important;
+            font-family: "Golos Text", sans-serif;
+            font-weight: 400;
+            color: #333335;
+            transition: 300ms;
+            &:hover {
+              color: #fed403;
+            }
+          }
+        }
+        .bottom {
+          hr {
+            width: 270px !important;
+          }
+          button {
+            width: 182px;
+            height: 50px;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: "Golos Text", sans-serif;
+            background-color: #fed403;
+            border-radius: 5px;
+            border: 0;
+            transition: 400ms;
+            &:hover {
+              background-color: #333335;
+              color: #ffffff;
+            }
+          }
+        }
+        .img_text {
+          img {
+            @media (max-width: 767px) {
+              width: 100% !important;
+              margin-top: 30px;
+              border-radius: 7px !important;
+            }
+            @media (min-width: 768px) and (max-width: 992px) {
+              width: 70% !important;
+              margin-top: 30px;
+              border-radius: 7px !important;
+            }
+          }
+          .p1 {
+            color: #59585d;
+            font-family: "Golos Text", sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            @media (max-width: 767px) {
+              width: 200px;
+            }
+            @media (min-width: 768px) and (max-width: 992px) {
+              font-size: 15px;
+            }
+          }
+          .p2 {
+            font-size: 70px;
+            font-family: "Cal Sans", sans-serif;
+            font-weight: 400;
+            @media (max-width: 767px) {
+              font-size: 50px;
+            }
+            @media (min-width: 768px) and (max-width: 992px) {
+              font-size: 55px;
+            }
+          }
+          .p3 {
+            font-size: 25px;
+            font-family: "Cal Sans", sans-serif;
+            font-weight: 400;
+            line-height: 30px;
+            padding-top: 20px;
+            @media (max-width: 992px) {
+              width: 60%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.sec_4 {
+  background-color: #f6f6f6;
+  .container {
+    @media (max-width: 992px) {
+      max-width: 90%;
+    }
+    @media (min-width: 1339px) {
+      max-width: 1300px;
+    }
+    background-image: url(./images/bg_4.png);
+    header {
+      p {
+        color: #59585d;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-family: "Golos Text", sans-serif;
+        span {
+          padding: 5px;
+        }
+        svg {
+          width: 20px;
+          color: #fed403;
+        }
+      }
+      h4 {
+        color: #1c1c1d;
+        font-size: 60px;
+        font-family: "Cal Sans", sans-serif;
+        font-weight: 400;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        @media (max-width: 992px) {
+          font-size: 26px;
+        }
+      }
+    }
+    main {
+      .div_main {
+        background-color: #f6f6f6;
+        border-radius: 7px;
+        border: 2px solid #e3e3e8;
+        transition: 400ms;
+        &:hover {
+          .animate__animated {
+            animation: animate__rubberBand !important;
+          }
+          .opacit {
+            opacity: 1;
+          }
+        }
+        .up {
+          width: 75px;
+          height: 75px;
+          border-radius: 5px;
+          background-color: #59585d2d;
+          position: relative;
+          .son {
+            background-color: rgb(49 49 49);
+            width: 75px;
+            height: 75px;
+            border-radius: 5px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+          }
+        }
+        h4 {
+          cursor: pointer;
+          font-size: 22px;
+          color: #1c1c1d;
+          font-family: "Cal Sans", sans-serif;
+          font-weight: 400;
+          transition: 400ms;
+          &:hover {
+            color: #fed403;
+          }
+        }
+        p {
+          font-size: 16px;
+          color: #59585d;
+          font-family: "Golos Text", sans-serif;
+          font-weight: 400;
+          line-height: 1.68;
+          letter-spacing: 3;
+        }
+        h6 {
+          font-size: 14px;
+          color: #1c1c1d;
+          font-weight: 500;
+          font-family: "Golos Text", sans-serif;
+          span {
+            padding-left: 5px;
+          }
+          svg {
+            width: 27px;
+            height: 27px;
+            padding: 5px;
+            border: 2px solid #e3e3e8;
+            border-radius: 100%;
+            background-color: #f6f6f6;
+            color: #000000;
+          }
+        }
+        button {
+          width: 100%;
+          height: 60px;
+          font-size: 18px;
+          font-family: "Golos Text", sans-serif;
+          background-color: #1c1c1d00;
+          border-radius: 7px;
+          border: 2px solid #e3e3e8;
+          transition: 400ms;
+          &:hover {
+            background-color: #fed403;
+          }
+        }
+        .opacit {
+          opacity: 0;
+          transition: all 0.5s ease;
+        }
+      }
+    }
+  }
+  footer {
+    svg {
+      width: 18px;
+      background-color: #fed403;
+      border-radius: 5px;
+    }
+    p {
+      font-size: 0.9rem;
+      font-weight: 400;
+      font-family: "Golos Text", sans-serif;
+      color: #59585d;
+    }
+    a {
+      color: #000000;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+}
+.sec_5 {
+  video {
+    width: 100%;
+    object-fit: cover;
+  }
+  .container {
+    max-width: 1300px;
+    /* right: 100px; */
+    @media (max-width: 767px) {
+      top: 50%;
+      left: 0%;
+      right: 0%;
+    }
+    /* bottom: -%; */
+    @media (min-width: 768px) and (max-width: 992px) {
+      left: 0%;
+      right: 0%;
+      bottom: -30%;
+    }
+    @media (min-width: 993px) {
+      left: 0%;
+      right: 0%;
+      bottom: -10%;
+    }
+    .pirant {
+      background-image: url(./images/bg_input.png);
+      background-color: #313131;
+      padding-bottom: 50px;
+      @media (max-width: 767px) {
+        padding-bottom: 0px;
+        padding-right: 5px !important;
+      }
+      button {
+        width: 120px;
+        height: 30px;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: "Golos Text", sans-serif;
+        background-color: #fed403;
+        border-radius: 5px;
+        border: 0;
+        transition: 400ms;
+        &:hover {
+          background-color: #333335;
+          color: #ffffff;
+        }
+      }
+      .left {
+        h4 {
+          width: 100%;
+          font-size: 24px;
+          font-family: "Cal Sans", sans-serif;
+          font-weight: 400;
+          color: #ffffff;
+        }
+        div {
+          width: 100%;
+          height: 45px;
+          background-color: #292929;
+          border-radius: 7px;
+          padding: 30px 15px !important;
+          input {
+            width: 100%;
+            padding-left: 10px;
+            border: 0;
+            background-color: #00000000;
+            color: #e3e3e8;
+            &:focus {
+              outline: none;
+            }
+            &::placeholder {
+              font-family: "Golos Text", sans-serif;
+              color: #e3e3e8;
+            }
+          }
+        }
+      }
+      .right {
+        padding-left: 8rem;
+        @media (max-width: 992px) {
+          padding-left: 0;
+        }
+        img {
+          width: 100px !important;
+        }
+        h5 {
+          color: #ffffff;
+          font-size: 22px;
+          font-family: "Cal Sans", sans-serif;
+          font-weight: 400;
+        }
+        p {
+          font-size: 18px;
+          color: #ffffffe6;
+          font-family: "Golos Text", sans-serif;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+.sec_6 {
+  @media (max-width: 767px) {
+    padding-top: 550px;
+  }
+  @media (min-width: 768px) and (max-width: 992px) {
+    padding-top: 250px;
+  }
+  @media (min-width: 993px) {
+    padding-top: 240px;
+  }
+  .container_1 {
+    @media (min-width: 1025px) {
+      max-width: 1300px !important;
+    }
+    .div_text {
+      h5 {
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-family: "Golos Text", sans-serif;
+        color: rgb(89 88 93);
+      }
+      h2 {
+        font-size: 30px;
+        font-family: "Cal Sans", sans-serif;
+        font-weight: 400;
+        color: #1c1c1d;
+        @media (min-width: 993px) {
+          font-size: 52px !important;
+        }
+      }
+      p {
+        font-size: 17px;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 400;
+        color: rgb(89 88 93);
+      }
+    }
+    .div_img {
+      img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        @media (min-width: 993px) {
+          width: 448px;
+          height: 117px;
+        }
+      }
+      div {
+        /* @media (min-width:993px) {
+            padding-left: 40px;
+            padding-right: 50px;
+          } */
+        p {
+          font-size: 14px;
+          font-weight: 500;
+          font-family: "Golos Text", sans-serif;
+          color: #59585d;
+          @media (min-width: 993px) {
+            width: 165px !important;
+          }
+        }
+        a {
+          font-size: 14px;
+          font-weight: 500;
+          font-family: "Golos Text", sans-serif;
+          color: rgb(28 28 29);
+          @media (min-width: 993px) {
+            width: 260px !important;
+          }
+        }
+      }
+    }
+  }
+  .container_2 {
+    @media (min-width: 1025px) {
+      max-width: 1300px !important;
+    }
+    .bgg {
+      &:hover {
+        .all_images {
+          background-color: #fed403 !important;
+        }
+        .animate__animated {
+          animation: animate__rubberBand !important;
+        }
+      }
+      background-color: #313131;
+      .all_images {
+        width: 75px;
+        height: 80px;
+        border-radius: 5px;
+        background-color: #404040 !important;
+        overflow: hidden !important;
+        transition: 500ms;
+      }
+      h3 {
+        margin-bottom: 0px !important;
+        padding-right: 15px;
+        font-size: 70px !important;
+        color: #313131 !important;
+        -webkit-text-stroke: 1px rgba(255, 255, 0, 0.288);
+        font-weight: 400;
+        font-family: "Cal Sans", sans-serif;
+        color: #ffffff;
+        @media (max-width: 767px) {
+          font-size: 50px;
+        }
+        @media (min-width: 992px) {
+          font-size: 60px;
+          font-weight: 400;
+        }
+      }
+      hr {
+        width: 250px;
+        color: #ffffff;
+      }
+      h2 {
+        font-size: 24px;
+        font-weight: 400;
+        font-family: "Cal Sans", sans-serif;
+        color: #ffffff;
+        padding-left: 15px;
+        padding-bottom: 15px;
+      }
+      p {
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 25px;
+        font-size: 18px;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 400;
+        color: #d6d6d6;
+        @media (max-width: 767px) {
+          width: 300px !important;
+        }
+        @media (min-width: 768px) and(max-width: 992px) {
+          /* width: 200px !important;       */
+        }
+        @media (min-width: 1050px) {
+          font-size: 16px;
+          width: 350px !important;
+          padding-right: 15px !important;
+          padding-bottom: 25px !important;
+        }
+      }
+    }
+  }
+}
+.sec_7 {
+  button {
+    transition: 300ms;
+    &:hover {
+      background-color: rgb(254 212 3) !important;
+      color: rgb(28 28 29) !important;
+    }
+  }
+  .inimation {
+    p {
+      color: #0b0900;
+      padding-top: 15px;
+      font-size: 24px;
+      font-family: "Cal Sans", sans-serif;
+      font-weight: 500;
+    }
+  }
+  div {
+    .imgg {
+      width: 100%;
+      height: 70vh;
+      object-fit: cover;
+    }
+  }
+  .div_absol {
+    right: 0;
+    left: 0;
+    top: 65%;
+    background-color: rgb(49 49 49);
+    @media (max-width: 767px) {
+      max-width: 95%;
+    }
+    @media (min-width: 1025px) {
+      max-width: 1300px !important;
+    }
+    .text_top {
+      .p1 {
+        font-size: 13px;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: #ffffff;
+      }
+      .h2_1 {
+        font-size: 45px;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 600;
+        color: #ffffff;
+        @media (min-width: 768px) and (max-width: 1024px) {
+          font-size: 30px;
+        }
+      }
+      .p2 {
+        font-size: 16px;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 400;
+        color: rgb(214 214 214);
+      }
+    }
+    .butt {
+      .but1 {
+        width: 167px;
+        height: 30px;
+        border-radius: 15px;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 400;
+        background-color: rgb(254 212 3);
+        color: rgb(28 28 29);
+        @media (max-width: 767px) {
+          width: 100%;
+          height: auto;
+          font-size: 17px;
+          padding: 10px 0;
+          border-radius: 30px;
+          font-weight: 500;
+        }
+        @media (min-width: 768px) and (max-width: 992px) {
+          width: 100%;
+          height: auto;
+          font-size: 17px;
+          text-align: start;
+          padding-left: 30px !important;
+          padding: 10px 0;
+          border-radius: 30px;
+          font-weight: 500;
+        }
+      }
+      .but2 {
+        width: 134px;
+        height: 30px;
+        border-radius: 15px;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 400;
+        background-color: rgb(55 55 55);
+        color: rgb(255 255 255);
+      }
+      .but3 {
+        width: 177px;
+        height: 30px;
+        border-radius: 15px;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 400;
+        background-color: rgb(55 55 55);
+        color: rgb(255 255 255);
+      }
+    }
+    hr {
+      width: 1150px;
+      max-width: 100%;
+      color: #ffffff;
+    }
+    .div_bottom {
+      .div_imgg {
+        img {
+          width: 532px;
+          height: 270px;
+          @media (max-width: 1024px) {
+            width: 100%;
+            height: auto;
+            padding: 20px 0;
+          }
+        }
+      }
+      .div_text {
+        h5 {
+          padding-bottom: 22px;
+          font-size: 24px;
+          font-family: "Inter Tight", sans-serif;
+          font-weight: 500;
+          color: #ffffff;
+        }
+        .p_parint {
+          width: 500px;
+          font-size: 17px;
+          font-family: "Inter Tight", sans-serif;
+          font-weight: 400;
+          color: rgb(214 214 214);
+          @media (max-width: 767px) {
+            width: 250px;
+          }
+          @media (min-width: 768px) and (max-width: 992px) {
+            width: 650px;
+          }
+        }
+        hr {
+          width: 520px;
+        }
+        div {
+          p {
+            margin: 0;
+            padding-bottom: 5px;
+            font-size: 17px;
+            font-family: "Golos Text", sans-serif;
+            font-weight: 200;
+            color: #ffffff;
+            @media (min-width: 768px) and (max-width: 992px) {
+              font-size: 14px;
+            }
+            span {
+              padding: 5px;
+            }
+            svg {
+              padding: 3px;
+              width: 20px;
+              height: 20px;
+              color: white;
+              @media (max-width: 992px) {
+                border: 1px solid #d6d3d2;
+                border-radius: 50%;
+              }
+            }
+          }
+        }
+        .butt {
+          padding-top: 20px;
+          button {
+            width: 167px;
+            height: 30px;
+            border-radius: 15px;
+            font-family: "Golos Text", sans-serif;
+            font-weight: 400;
+            background-color: rgb(55 55 55);
+            color: rgb(255 255 255);
+            @media (max-width: 992px) {
+              width: 100%;
+              height: auto;
+              font-size: 17px;
+              text-align: start;
+              padding-left: 30px !important;
+              padding: 10px 0;
+              border-radius: 30px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    padding-bottom: 82rem;
+  }
+  @media (min-width: 768px) and (max-width: 992px) {
+    padding-bottom: 70rem;
+  }
+  @media (min-width: 993px) {
+    padding-bottom: 32rem;
+  }
+}
+.sec_8 {
+  .container {
+    @media (min-width: 1025px) {
+      max-width: 1300px !important;
+    }
+
+    .card {
+      background-color: #f6f6f6;
+      border-radius: 5px;
+      padding: 12px 20px 150px 20px;
+      transition: 300ms;
+      h3 {
+        font-size: 40px;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 800;
+      }
+      p {
+        font-size: 17px;
+        font-family: "Cal Sans", sans-serif;
+        font-weight: 400;
+        color: rgb(89 88 93);
+      }
+      div {
+        margin: 0;
+        bottom: 0;
+        left: 0;
+        p {
+          margin: 0;
+          padding: 15px 21px;
+          border-radius: 0 5px 0 5px;
+          background-color: rgb(49 49 49);
+          color: rgb(255 255 255);
+          font-family: "Golos Text", sans-serif;
+          font-weight: 800;
+        }
+      }
+      &:hover {
+        background-color: #fed403 !important;
+      }
+    }
+  }
+}
+.sec_9 {
+  background-color: #313131;
+  padding-top: 110px;
+  padding-bottom: 22px;
+  .container {
+    p {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: #ffffff;
+      font-family: "Golos Text", sans-serif;
+      font-weight: 400;
+      padding-bottom: 14px;
+      margin: 0;
+    }
+    h2 {
+      font-size: clamp(30px, 10vw, 52px);
+      color: #ffffff;
+      font-family: "Cal Sans", sans-serif;
+      font-weight: 400;
+    }
+    .spa {
+      width: 100%;
+      color: #999;
+    }
+    .but_pirant {
+      button {
+        width: 152px;
+        height: 38px;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 400;
+        border-radius: 3px;
+        color: #ffffff;
+        background-color: #313131;
+        border: 1px solid #3e3e3e;
+        transition: 300ms;
+        &:hover {
+          background-color: #fed403;
+          color: rgb(28 28 29);
+        }
+      }
+      .but1 {
+        width: 116px;
+        height: 38px;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 400;
+        border-radius: 3px;
+        color: rgb(28 28 29);
+        background-color: #fed403;
+        border: 1px solid #3e3e3e;
+      }
+    }
+  }
+}
+.sec_10 {
+  .div_pirant {
+    overflow: auto;
+    position: relative;
+    transition: 500ms;
+    img {
+      transition: 300ms;
+      &:hover{
+        transform: scale(1.025);
+      }
+    }
+    .text {
+      opacity: 0;
+      width: 350px;
+      height: 60%;
+      position: absolute;
+      bottom: 0;
+      background-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 40px 20px;
+      h5 {
+        font-size: 22px;
+        color: #ffffff;
+        font-family: "Cal Sans", sans-serif;
+        font-weight: 400;
+      }
+      p {
+        font-size: 17px;
+        color: #ffffff;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 400;
+      }
+      button{
+        background-color: transparent;
+        border: 0;
+        font-size: 17px;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 400;
+        color: #ffffff;
+      }
+      transition: 300ms;
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
+}
