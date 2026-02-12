@@ -1082,11 +1082,19 @@ header.scrolled .head {
     overflow: auto;
     position: relative;
     transition: 500ms;
-    img {
-      object-fit: cover;
+    scrollbar-width: none;
+    div{
       transition: 300ms;
       &:hover{
-        transform: scale(1.025);
+        transform: scale(1.010);
+      }
+      img {
+        object-fit: cover;
+      }
+      div{
+        width: 350px;
+        height: 100%;
+        background-color: #00000068;
       }
     }
     .text {
@@ -1125,6 +1133,7 @@ header.scrolled .head {
         transition: 300ms;
         &:hover{
           color: #fed403;
+          transform: translate(6px, -6px);
         }
       }
       transition: 300ms;
