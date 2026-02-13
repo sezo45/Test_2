@@ -2,6 +2,17 @@
 /*   font-family: "Inter Tight", sans-serif; */
 /*   font-family: "Cal Sans", sans-serif; */
 /*   font-family: "Space Grotesk", sans-serif; */
+@keyframes inmy {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}
 * {
   padding: 0%;
   margin: 0%;
@@ -1167,7 +1178,7 @@ header.scrolled .head {
   width: 100%;
   background-color: #f6f6f6;
   background-image:
-    linear-gradient(45deg, #e3e3e8b7, rgb(255, 255, 255)),
+    linear-gradient(45deg, #e3e3e8e9, rgb(255, 255, 255)),
     url(./images/bg_sec_11.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1241,7 +1252,7 @@ header.scrolled .head {
           font-size: 16px;
           font-family: "Golos Text", sans-serif;
           font-weight: 600;
-          columns: rgb(28 28 29);
+          color: rgb(28 28 29);
           @media (max-width: 992px) {
             padding-top: 50px;
           }
@@ -1291,6 +1302,7 @@ header.scrolled .head {
     }
     img {
       width: 100%;
+      animation: inmy 8s infinite;
     }
   }
   .bgb {
@@ -1298,7 +1310,7 @@ header.scrolled .head {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 40%;
+    width: 585px;
     height: 100%;
     z-index: -10;
   }
