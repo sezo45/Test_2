@@ -4,7 +4,7 @@
 /*   font-family: "Space Grotesk", sans-serif; */
 @keyframes inmy {
   0% {
-    transform: translateX(0);
+    transform: translateX(20px);
   }
   50% {
     transform: translateX(-10px);
@@ -1213,7 +1213,7 @@ header.scrolled .head {
             border: 0;
             color: #f6f6f6;
             outline: none;
-            &:focus{
+            &:focus {
               border: 1px solid #fed403;
             }
             &::placeholder {
@@ -1229,7 +1229,7 @@ header.scrolled .head {
             border: 0;
             color: #ffffff;
             outline: none;
-            &:focus{
+            &:focus {
               border: 1px solid #fed403;
             }
             &::placeholder {
@@ -1284,10 +1284,10 @@ header.scrolled .head {
             height: 80px;
             background-color: #313131;
             &:hover {
-        .animate__animated {
-          animation: animate__rubberBand !important;
-        }
-      }
+              .animate__animated {
+                animation: animate__rubberBand !important;
+              }
+            }
           }
           .contact {
             h4 {
@@ -1328,4 +1328,138 @@ header.scrolled .head {
     z-index: -10;
   }
 }
-#sec_12{}
+#sec_12 {
+  background-color: #313131;
+  .container {
+    padding-bottom: 20px;
+    @media (min-width: 993px) {
+      max-width: 1300px !important;
+    }
+    padding-top: 100px;
+    img {
+      width: 180px !important;
+      @media (max-width: 992px) {
+        padding-bottom: 30px;
+      }
+    }
+    .inbut {
+      display: flex;
+      background-color: #393939;
+      padding: 10px 15px;
+      @media (max-width: 767px) {
+        padding: 10px 5px;
+      }
+      input {
+        width: 80%;
+        height: 50px;
+        /* padding: 15px 20px; */
+        color: #ffffff;
+        background-color: #393939;
+        outline: none;
+        border: 0;
+        &::placeholder {
+          color: #ffffff;
+          font-family: "Golos Text", sans-serif;
+          font-weight: 400;
+        }
+        @media (max-width: 767px) {
+          width: 60%;
+        }
+      }
+      button {
+        width: 20%;
+        height: 50px;
+        border: 0;
+        border-radius: 5px;
+        background-color: #fed403;
+        color: rgb(49 49 49);
+        font-family: "Golos Text", sans-serif;
+        font-weight: 600;
+        transition: 300ms;
+        &:hover {
+          background-color: #e4e4e4;
+        }
+        @media (max-width: 767px) {
+          width: 40%;
+        }
+      }
+    }
+    .line {
+      padding-top: clamp(30px, 10vw, 50px);
+      color: #6c757d;
+      /* @media (max-width: 992px) {
+      padding-top: 30px;
+      } */
+    }
+    .contac {
+      border-bottom: 1px solid #3c3e3f;
+      .cv{
+        border-right:1px solid #3c3e3f;
+        h4{
+
+          padding-left: 0 !important;
+        }
+        p{
+          padding-left: 0;
+        }
+      @media (max-width: 992px) {
+        border: 0;        
+      }
+      .title::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0px;
+        width: 50px;
+        height: 2px;
+        background-color: #fed403;
+      }
+      }
+      h4 {
+        font-size: 24px;
+        font-family: "Cal Sans", sans-serif;
+        font-weight: 400;
+        color: #ffffff;
+        padding-bottom: 5px;
+        border-top: 1px solid #3c3e3f;
+        padding-top: 75px;
+        padding-left: 25px;
+        @media (max-width: 992px) {
+          padding-top: 25px;
+          padding-left: 0;
+          border-top: 0;
+        }
+      }
+      .title {
+        color: white;
+        position: relative;
+        padding-bottom: 15px;
+      }
+      .title::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 25px;
+        width: 50px;
+        height: 2px;
+        background-color: #fed403;
+        @media (max-width: 992px) {
+          left: 0;          
+        }
+      }
+      p {
+        font-size: 17px;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 400;
+        color: #d2d2d2;
+        padding-left: 25px;
+        @media (max-width: 992px) {
+          padding-left: 0;          
+        }
+        @media (min-width: 993px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
