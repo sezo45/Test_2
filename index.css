@@ -1212,7 +1212,10 @@ header.scrolled .head {
             padding: 20px 18px;
             border: 0;
             color: #f6f6f6;
-
+            outline: none;
+            &:focus{
+              border: 1px solid #fed403;
+            }
             &::placeholder {
               color: #ffffff;
               font-size: 17px;
@@ -1225,6 +1228,10 @@ header.scrolled .head {
             padding: 20px 18px;
             border: 0;
             color: #ffffff;
+            outline: none;
+            &:focus{
+              border: 1px solid #fed403;
+            }
             &::placeholder {
               color: #ffffff;
               font-size: 17px;
@@ -1276,6 +1283,11 @@ header.scrolled .head {
             width: 80px;
             height: 80px;
             background-color: #313131;
+            &:hover {
+        .animate__animated {
+          animation: animate__rubberBand !important;
+        }
+      }
           }
           .contact {
             h4 {
@@ -1316,3 +1328,4 @@ header.scrolled .head {
     z-index: -10;
   }
 }
+#sec_12{}
