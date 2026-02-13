@@ -1,6 +1,7 @@
 /*   font-family: "Golos Text", sans-serif; */
 /*   font-family: "Inter Tight", sans-serif; */
 /*   font-family: "Cal Sans", sans-serif; */
+/*   font-family: "Space Grotesk", sans-serif; */
 * {
   padding: 0%;
   margin: 0%;
@@ -1078,20 +1079,21 @@ header.scrolled .head {
   }
 }
 .sec_10 {
+  padding-bottom: 3rem;
   .div_pirant {
     overflow: auto;
     position: relative;
     transition: 500ms;
     scrollbar-width: none;
-    div{
+    div {
       transition: 300ms;
-      &:hover{
-        transform: scale(1.010);
+      &:hover {
+        transform: scale(1.01);
       }
       img {
         object-fit: cover;
       }
-      div{
+      div {
         width: 350px;
         height: 100%;
         background-color: #00000068;
@@ -1112,7 +1114,7 @@ header.scrolled .head {
         font-family: "Cal Sans", sans-serif;
         font-weight: 400;
         transition: 300ms;
-        &:hover{
+        &:hover {
           color: #fed403;
         }
       }
@@ -1123,7 +1125,7 @@ header.scrolled .head {
         font-weight: 400;
         transition: 300ms;
       }
-      button{
+      button {
         background-color: transparent;
         border: 0;
         font-size: 17px;
@@ -1131,15 +1133,173 @@ header.scrolled .head {
         font-weight: 400;
         color: #ffffff;
         transition: 300ms;
-        &:hover{
+        &:hover {
           color: #fed403;
           transform: translate(6px, -6px);
         }
       }
       transition: 300ms;
-      &:hover{
+      &:hover {
         opacity: 1;
       }
     }
+  }
+  footer {
+    svg {
+      width: 18px;
+      background-color: #fed403;
+      border-radius: 5px;
+    }
+    p {
+      font-size: 0.9rem;
+      font-weight: 400;
+      font-family: "Golos Text", sans-serif;
+      color: #59585d;
+    }
+    a {
+      color: #000000;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+}
+#sec_11 {
+  width: 100%;
+  background-color: #f6f6f6;
+  background-image:
+    linear-gradient(45deg, #e3e3e8b7, rgb(255, 255, 255)),
+    url(./images/bg_sec_11.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .container {
+    @media (min-width: 993px) {
+      max-width: 1300px !important;
+    }
+    .parint {
+      padding-top: 70px;
+      padding-bottom: 100px;
+      .data {
+        padding: 50px 40px;
+        background-color: #313131;
+        h3 {
+          font-size: clamp(24px, 10vw, 36px);
+          color: #ffffff;
+          font-family: "Cal Sans", sans-serif;
+          font-weight: 400;
+        }
+        p {
+          font-size: 16px;
+          color: #ffffff;
+          font-family: "Golos Text", sans-serif;
+          font-weight: 400;
+          padding-bottom: 20px;
+        }
+        .input-up {
+          padding-bottom: 25px;
+          input {
+            background-color: #3d3d3d;
+            padding: 20px 18px;
+            border: 0;
+            color: #f6f6f6;
+
+            &::placeholder {
+              color: #ffffff;
+              font-size: 17px;
+              font-family: "Golos Text", sans-serif;
+              font-weight: 400;
+            }
+          }
+          textarea {
+            background-color: #3d3d3d;
+            padding: 20px 18px;
+            border: 0;
+            color: #ffffff;
+            &::placeholder {
+              color: #ffffff;
+              font-size: 17px;
+              font-family: "Golos Text", sans-serif;
+              font-weight: 400;
+            }
+          }
+        }
+        button {
+          padding: 14px 30px;
+          background-color: #fed403;
+          color: #1c1c1d;
+          border: 0;
+          font-size: 16px;
+          font-family: "Space Grotesk", sans-serif;
+          font-weight: 500;
+        }
+      }
+      .communication-1 {
+        @media (min-width: 993px) {
+          padding-left: 50px;
+        }
+        .p1 {
+          text-transform: uppercase;
+          font-size: 16px;
+          font-family: "Golos Text", sans-serif;
+          font-weight: 600;
+          columns: rgb(28 28 29);
+          @media (max-width: 992px) {
+            padding-top: 50px;
+          }
+        }
+        h2 {
+          font-size: clamp(25px, 10vw, 52px);
+          font-family: "Cal Sans", sans-serif;
+          font-weight: 400;
+          padding: 15px 0px;
+          color: rgb(28 28 29);
+        }
+        .p2 {
+          font-size: 16px;
+          font-family: "Golos Text", sans-serif;
+          font-weight: 400;
+          color: rgb(89 88 93);
+        }
+        .communication-2 {
+          padding-bottom: 20px;
+          .img-up {
+            width: 80px;
+            height: 80px;
+            background-color: #313131;
+          }
+          .contact {
+            h4 {
+              font-size: 22px;
+              font-family: "Cal Sans", sans-serif;
+              font-weight: 400;
+              color: rgb(28 28 29);
+            }
+            p {
+              font-size: 17px;
+              font-family: "Golos Text", sans-serif;
+              font-weight: 400;
+              color: rgb(89 88 93);
+            }
+          }
+        }
+      }
+    }
+  }
+  .icon-grar {
+    width: 25%;
+    @media (max-width: 992px) {
+      width: 50%;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .bgb {
+    background-image: url(./images/bg_sec11_2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 100%;
+    z-index: -10;
   }
 }
