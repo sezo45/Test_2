@@ -50,6 +50,9 @@ header {
     svg {
       color: white;
       cursor: pointer;
+      border-radius: 50%;
+      padding: 7px;
+      border: 1px solid #3e3e3e;
       @media (max-width: 767px) {
         width: 30px;
       }
@@ -73,6 +76,24 @@ header {
       @media (max-width: 1024px) {
         display: none !important;
       }
+    }
+    .off1{
+     background-color: #313131;
+     .off3{
+      a{
+        padding-bottom: 15px;
+        padding-top: 15px;
+        color: #ffffff;
+        font-size: 17px;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 400;
+        border-bottom: 1px solid #3c3e3f;
+        transition: 300ms;
+        &:hover{
+          color: #fed403;
+        }
+      }
+     }
     }
   }
 }
@@ -1330,12 +1351,12 @@ header.scrolled .head {
 }
 #sec_12 {
   background-color: #313131;
-  .container {
+  .container_1 {
     padding-bottom: 20px;
+    padding-top: 100px;
     @media (min-width: 993px) {
       max-width: 1300px !important;
     }
-    padding-top: 100px;
     img {
       width: 180px !important;
       @media (max-width: 992px) {
@@ -1352,7 +1373,6 @@ header.scrolled .head {
       input {
         width: 80%;
         height: 50px;
-        /* padding: 15px 20px; */
         color: #ffffff;
         background-color: #393939;
         outline: none;
@@ -1387,36 +1407,33 @@ header.scrolled .head {
     .line {
       padding-top: clamp(30px, 10vw, 50px);
       color: #6c757d;
-      /* @media (max-width: 992px) {
-      padding-top: 30px;
-      } */
     }
     .contac {
       border-bottom: 1px solid #3c3e3f;
-      .cv{
-        border-right:1px solid #3c3e3f;
-        h4{
-
+      .cv {
+        border-right: 1px solid #3c3e3f;
+        h4 {
           padding-left: 0 !important;
         }
-        p{
+        p {
           padding-left: 0;
         }
-      @media (max-width: 992px) {
-        border: 0;        
-      }
-      .title::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0px;
-        width: 50px;
-        height: 2px;
-        background-color: #fed403;
-      }
+        @media (max-width: 992px) {
+          border-top: 1px solid #3c3e3f;
+          border-right: 0;
+        }
+        .title::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0px;
+          width: 50px;
+          height: 2px;
+          background-color: #fed403;
+        }
       }
       h4 {
-        font-size: 24px;
+        font-size: 20px;
         font-family: "Cal Sans", sans-serif;
         font-weight: 400;
         color: #ffffff;
@@ -1444,20 +1461,42 @@ header.scrolled .head {
         height: 2px;
         background-color: #fed403;
         @media (max-width: 992px) {
-          left: 0;          
+          left: 0;
         }
       }
       p {
-        font-size: 17px;
+        font-size: 16px;
         font-family: "Golos Text", sans-serif;
         font-weight: 400;
         color: #d2d2d2;
         padding-left: 25px;
         @media (max-width: 992px) {
-          padding-left: 0;          
+          padding-left: 0;
         }
         @media (min-width: 993px) {
           font-size: 14px;
+        }
+      }
+    }
+  }
+  .container_2{
+    @media (min-width: 993px) {
+      max-width: 1300px !important;
+    }
+    .text{
+      p{
+        font-size: 15px;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 400;
+        color: #dadada;
+      }
+    }
+    .social{
+      a{
+        svg{
+          width: 18px;
+          height: 18px;
+          color: #ffffff;
         }
       }
     }
