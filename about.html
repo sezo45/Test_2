@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/webp" href="./images/icon_head.png">
+    <title>Brickz Construction WordPress Theme</title>
+    <link rel="stylesheet" href="./about.css">
+    <script src="./about.js"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Golos+Text:wght@400..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <!-- animate && wow -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+
+<body>
+    <header class="fixed-top d-flex justify-content-center flex-wrap w-100">
+        <div class="container">
+            <div class="head d-flex justify-content-between align-items-center py-3 z-3">
+                <img class="ps-3" src="./images/logo_002.png" width="180px" alt="">
+                <nav class="d-sm-none d-md-none d-lg-flex gap-4 ">
+                    <a class="yell text-decoration-none " href="./index.html">Home</a>
+                    <a class="text-decoration-none" href="./about.html">About</a>
+                    <a class="text-decoration-none" href="">Services</a>
+                    <a class="text-decoration-none" href="">Projects</a>
+                    <a class="text-decoration-none" href="">Blog</a>
+                    <a class="text-decoration-none" href="">Contact Us</a>
+                </nav>
+                <div class="d-flex gap-3 pe-3 overflow-hidden">
+                    <button class="d-sm-none d-md-none d-lg-flex text-center border-0 justify-content-center
+                    align-items-center">Get
+                        Free Quote &#8599;
+                    </button>
+                    <svg class="d-flex d-none d-md-flex d-lg-flex" xmlns="http://www.w3.org/2000/svg" width="45"
+                        height="45" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m19.485 20.154l-6.262-6.262q-.75.639-1.725.989t-1.96.35q-2.398 0-4.064-1.666Q3.808 11.898 3.808 9.5t1.666-4.064t4.064-1.667t4.065 1.667T15.269 9.5q0 1.042-.369 2.017t-.97 1.668l6.262 6.261zM9.539 14.23q1.99 0 3.36-1.37t1.37-3.361t-1.37-3.36t-3.36-1.37t-3.361 1.37t-1.37 3.36t1.37 3.36t3.36 1.37" />
+                    </svg>
+                    <!-- __________________________________- -->
+                    <svg data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"
+                        xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" d="M11 17h8M5 12h14m-8-5h8" />
+                    </svg>
+                </div>
+                <div class="off1 offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="off2 offcanvas-header d-flex col-12">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel"> <img class="ps-3 pt-5 col-10"
+                                src="./images/logo_002.png" width="180px" alt=""></h5>
+                        <button class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            <div class="off3 d-flex flex-column ps-3">
+                                <a class="yell text-decoration-none " href="./index.html">Home</a>
+                                <a class="text-decoration-none" href="./about.html">About</a>
+                                <a class="text-decoration-none" href="">Services</a>
+                                <a class="text-decoration-none" href="">Projects</a>
+                                <a class="text-decoration-none" href="">Blog</a>
+                                <a class="text-decoration-none" href="">Contact Us</a>
+                            </div>
+                        </div>
+                        <!-- <div class="dropdown mt-3">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            Dropdown button
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="sec_1 py-5">
+        <div class="container flex-wrap">
+            <!-- left -->
+            <div class="d-flex col-12">
+                <div class="row">
+                    <div
+                        class="col-12 col-md-12 col-lg-5 d-flex justify-content-center justify-content-md-start justify-content-lg-start pb-5 pb-md-5 pb-lg-0">
+                        <img class="img1 rounded animate__animated animate__fadeInLeft wow" src="./images/hm_00002.jpg"
+                            alt="">
+                    </div>
+                    <!-- right -->
+                    <div class="right col-12 col-md-12 col-lg-7 ps-3 ps-md-3 ps-lg-4">
+                        <div class="d-flex flex-column">
+                            <!-- الدفايه اللي فوق -->
+                            <div class="divtop col-12">
+                                <p class="p1"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                                        viewBox="0 0 48 48">
+                                        <path fill="currentColor" stroke="currentColor" stroke-width="4"
+                                            d="M24 33a9 9 0 1 0 0-18a9 9 0 0 0 0 18Z" />
+                                    </svg><span>About Brickz Construction</span></p>
+                                <h4 class="h1 pb-3 pb-md-3 pb-lg-3 ">Experts Modern Construction Service & Solutions
+                                </h4>
+                                <p class="p2 pb-4">Our data analysis tools and techniques help you turn complex data
+                                    into
+                                    clear, strategic insights
+                                    that improve performance and guide growth.</p>
+                            </div>
+                            <!-- الدفايه اللي تحت -->
+                            <div class="divbottom col-12 d-flex flex-row flex-wrap ">
+                                <!-- الكلام اللي علي الشمال كله -->
+                                <div class="bottom col-12 col-md-12 col-lg-6 flex-wrap">
+                                    <!-- التلات كلمات -->
+                                    <div class="text3 d-flex flex-wrap gap-3 gap-md-3 gap-lg-0">
+                                        <h5 class="text-warning col-12 col-md-12 col-lg-4"> Mision</h5>
+                                        <h5 class="col-12 col-md-12 col-lg-4"> Vision</h5>
+                                        <h5 class="col-12 col-md-12 col-lg-4"> Core Value</h5>
+                                    </div>
+                                    <span>
+                                        <hr class="d-none d-md-none d-lg-flex">
+                                    </span>
+                                    <p class="py-2 d-none d-md-none d-lg-flex">Our vision is to be the most trusted
+                                        impactful business consulting
+                                        firm globally, known for
+                                        trans forming companies.</p>
+                                    <p class="mb-0 pb-1 d-none d-md-none d-lg-flex">✔ Regulatory Investigations</p>
+                                    <p class="d-none d-md-none d-lg-flex">✔ Anit- Competitive Conduct</p>
+                                    <button class="mt-4">Discover More &#8599;</button>
+                                </div>
+                                <!-- الصورة والكلام اللي تحتها -->
+                                <div class="img_text col-12 col-md-12 col-lg-6 d-flex flex-column ps-0 ps-md-0 ps-lg-4">
+                                    <div class="d-flex justify-content-center justify-content-md-start">
+                                        <img class="rounded pb-0 d-flex align-content-center justify-content-center"
+                                            src="./images/about_tab00001.jpg" width="300px" alt="">
+                                    </div>
+                                    <p class="p1 py-3 col-12">Our data analysis tools and techniques help you turn
+                                        complex data.
+                                    </p>
+                                    <div class="d-flex align-content-center">
+                                        <p class="p2 align">25</p>
+                                        <p class="p3 ps-2">Years Of Experience</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec_7">
+        <marquee class="bg-warning" direction="right">
+            <div class="inimation d-flex justify-content-center align-items-center gap-4 py-1">
+                <p>Construction</p>
+                <img src="./images/astrek.png" width="25px" height="25px" alt="">
+                <p>Building</p>
+                <img src="./images/astrek.png" width="25px" height="25px" alt="">
+                <p>Renovation</p>
+                <img src="./images/astrek.png" width="25px" height="25px" alt="">
+                <p>Construction</p>
+                <img src="./images/astrek.png" width="25px" height="25px" alt="">
+                <p>Building</p>
+                <img src="./images/astrek.png" width="25px" height="25px" alt="">
+                <p>Renovation</p>
+                <img src="./images/astrek.png" width="25px" height="25px" alt="">
+                <p>Construction</p>
+                <img src="./images/astrek.png" width="25px" height="25px" alt="">
+                <p>Building</p>
+                <img src="./images/astrek.png" width="25px" height="25px" alt="">
+                <p>Renovation</p>
+                <img src="./images/astrek.png" width="25px" height="25px" alt="">
+            </div>
+        </marquee>
+        <div class="position-relative">
+            <img class="imgg d-none d-md-none d-lg-flex" src="./images/bg_sec_7.jpg" alt="">
+            <div class="div_absol container pb-5 position-absolute">
+                <div class="text_top text-center d-flex flex-column justify-content-center align-items-center">
+                    <p class="p1 pt-5 col-12"><svg class="text-warning" xmlns="http://www.w3.org/2000/svg" width="20"
+                            height="20" viewBox="0 0 48 48">
+                            <path fill="currentColor" stroke="currentColor" stroke-width="4"
+                                d="M24 33a9 9 0 1 0 0-18a9 9 0 0 0 0 18Z" />
+                        </svg><span>Why choose us</span><svg class="text-warning" xmlns="http://www.w3.org/2000/svg"
+                            width="20" height="20" viewBox="0 0 48 48">
+                            <path fill="currentColor" stroke="currentColor" stroke-width="4"
+                                d="M24 33a9 9 0 1 0 0-18a9 9 0 0 0 0 18Z" />
+                        </svg>
+                    </p>
+                    <h2 class="h2_1 h1 animate__animated animate__fadeIn wow">Your Trusted Construction Partner</h2>
+                    <p class="p2">We believe that every business is uniquids our approach is never one size fits</p>
+                </div>
+                <div class="butt d-flex justify-content-center align-items-center pt-4 gap-2">
+                    <button class="but1 justify-content-center align-items-center border-0">Construction
+                        Quality</button>
+                    <button
+                        class="but2 d-none d-md-none d-lg-flex justify-content-center align-items-center border-0">Process
+                        Quality</button>
+                    <button
+                        class="but3 d-none d-md-none d-lg-flex justify-content-center align-items-center border-0">Safety
+                        &
+                        Trust Quality</button>
+                </div>
+                <span class="d-none d-md-none d-lg-flex justify-content-center align-items-center pb-3">
+                    <hr>
+                </span>
+                <div class="div_bottom d-flex flex-column flex-md-column flex-lg-row col-12 pb-2">
+                    <div class="div_imgg col-12 col-md-12 col-lg-6 d-flex align-items-center justify-content-center">
+                        <img class="rounded" src="./images/img_absolute.jpg" alt="">
+                    </div>
+                    <div class="div_text col-12 col-md-12 col-lg-6 ps-lg-3">
+                        <h5>Expert Quality in Construction</h5>
+                        <p class="p_parent">We provide the best services ensuring your outstanding growth Lorem ipsum
+                            dolor
+                            sit amet. Nulla
+                            ultrices neque sodales best</p>
+                        <span class="d-flex pb-3">
+                            <hr>
+                        </span>
+                        <div class="d-flex flex-wrap col-12">
+                            <p class="col-12 col-md-4 col-lg-6"><svg xmlns="http://www.w3.org/2000/svg" width="48"
+                                    height="48" viewBox="0 0 48 48">
+                                    <path fill="currentColor" fill-rule="evenodd" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                                        d="m4 24l5-5l10 10L39 9l5 5l-25 25z" clip-rule="evenodd" />
+                                </svg><span>Outstanding Performance</span></p>
+                            <p class="col-12 col-md-4 col-lg-6"><svg xmlns="http://www.w3.org/2000/svg" width="48"
+                                    height="48" viewBox="0 0 48 48">
+                                    <path fill="currentColor" fill-rule="evenodd" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                                        d="m4 24l5-5l10 10L39 9l5 5l-25 25z" clip-rule="evenodd" />
+                                </svg><span>Strategy Meets Technology</span></p>
+                            <p class="col-12 col-md-4 col-lg-6"><svg xmlns="http://www.w3.org/2000/svg" width="48"
+                                    height="48" viewBox="0 0 48 48">
+                                    <path fill="currentColor" fill-rule="evenodd" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                                        d="m4 24l5-5l10 10L39 9l5 5l-25 25z" clip-rule="evenodd" />
+                                </svg><span>Global Support Network</span></p>
+                            <p class="col-12 col-md-4 col-lg-6"><svg xmlns="http://www.w3.org/2000/svg" width="48"
+                                    height="48" viewBox="0 0 48 48">
+                                    <path fill="currentColor" fill-rule="evenodd" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                                        d="m4 24l5-5l10 10L39 9l5 5l-25 25z" clip-rule="evenodd" />
+                                </svg><span>Exceptional Communication</span></p>
+                            <p class="col-12 col-md-4 col-lg-6"><svg xmlns="http://www.w3.org/2000/svg" width="48"
+                                    height="48" viewBox="0 0 48 48">
+                                    <path fill="currentColor" fill-rule="evenodd" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                                        d="m4 24l5-5l10 10L39 9l5 5l-25 25z" clip-rule="evenodd" />
+                                </svg><span>Rapid Talent Acquisition</span></p>
+                            <p class="col-12 col-md-4 col-lg-6"><svg xmlns="http://www.w3.org/2000/svg" width="48"
+                                    height="48" viewBox="0 0 48 48">
+                                    <path fill="currentColor" fill-rule="evenodd" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                                        d="m4 24l5-5l10 10L39 9l5 5l-25 25z" clip-rule="evenodd" />
+                                </svg><span>24/7 Availability Across Time</span></p>
+                        </div>
+                        <div class="butt d-flex d-md-flex d-lg-none flex-column gap-3">
+                            <button class="justify-content-center align-items-center border-0">Process Quality</button>
+                            <button class="justify-content-center align-items-center border-0">Safety & Trust
+                                Quality</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <section class="sec_8 py-5">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card position-relative">
+                        <h3>62.5K</h3>
+                        <p>Customer Satisfaction</p>
+                        <div class="position-absolute">
+                            <p>01</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card position-relative">
+                        <h3>7.8K</h3>
+                        <p>Projects Completed</p>
+                        <div class="position-absolute">
+                            <p>02</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card position-relative">
+                        <h3>1 25+</h3>
+                        <p>Construction Award</p>
+                        <div class="position-absolute">
+                            <p>03</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card position-relative">
+                        <h3>60.5K</h3>
+                        <p>Completed Projects</p>
+                        <div class="position-absolute">
+                            <p>04</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
