@@ -9,24 +9,27 @@
 }
 header {
   transition: all 0.4s ease-in-out;
-  padding: 20px;
+  padding: 0;
+  border-radius: 0;
   .container {
     padding: 0 !important;
     max-width: 2560px !important;
 
     .head {
       width: 100%;
-      background-color: #313131;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+      /* border-bottom: 1px solid #59585d; */
+      background-color: #ffffff;
       transition: all 0.4s ease-in-out;
       padding: 0 2px;
-      border-radius: 5px;
+      border-radius: 0;
       nav {
         font-family: "Golos Text", sans-serif;
         .yell {
-          color: #fed403;
+          color: #0b0900;
         }
         a {
-          color: #ffffff;
+          color: #1c1c1d;
           font-weight: 500;
           font-size: 16px;
           transition: 400ms;
@@ -40,14 +43,11 @@ header {
         }
       }
       svg {
-        color: white;
+        color: #1c1c1d;
         cursor: pointer;
         border-radius: 100%;
         padding: 7px;
-        border: 1px solid #3e3e3e;
-        @media (max-width: 767px) {
-          width: 30px;
-        }
+        border: 1px solid #ebebeb;
         &:hover {
           color: #fed403 !important;
         }
@@ -90,398 +90,172 @@ header {
     }
   }
 }
-header.scrolled {
-  padding: 0;
-}
-header.scrolled .head {
-  width: 100%;
-  border-radius: 0;
-  background-color: #313131;
-}
-.sec_1 {
+#sec-1 {
+  padding: 80px 0px;
   .container {
     @media (min-width: 1025px) {
       max-width: 1300px !important;
     }
-    .img1 {
-      @media (max-width: 992px) {
-        max-width: 100% !important;
-      }
-      /* @media (min-width:993px) and (max-width: 1024px) {
-            width: 100% !important;
-        } */
-      animation-duration: 2s;
+    @media (min-width: 768px) and (max-width: 1024px) {
+      max-width: 800px;
     }
-    .right {
-        @media (min-width:993px) and (max-width: 1024px) {
-            width: 100% !important;
+    /* Left */
+    .Left_img {
+      overflow: hidden;
+      @media (max-width: 1024px) {
+        padding-bottom: 20px;
+        width: 100%;
+      }
+      img {
+        animation-duration: 2s;
+        border-radius: 5px;
+        @media (max-width: 767px) {
+          width: 95%;
         }
-      .divtop {
+      }
+    }
+    /* Right */
+    .all-right {
+      /* Top */
+      @media (min-width: 768px) and (max-width: 1024px) {
+        width: 100%;
+      }
+      .text-top {
         .p1 {
-          color: #59585d;
+          font-size: clamp(14px, 3vw, 16px);
           text-transform: uppercase;
-          font-size: 16px;
-          font-size: 14px;
-          font-weight: 400;
           font-family: "Golos Text", sans-serif;
-          svg {
-            width: 20px;
-            color: #fed403;
+          font-weight: 400;
+          color: #59585d;
+          @media (max-width: 1024px) {
+            padding-top: 10px;
           }
         }
-        h4 {
+        h2 {
+          font-size: clamp(32px, 4vw, 52px);
           font-family: "Cal Sans", sans-serif;
-          font-weight: 400;
-          @media (max-width: 992px) {
-            font-size: 30px;
-          }
+          font-weight: 500;
+          color: rgb(28 28 29);
+          animation-duration: 2s;
         }
         .p2 {
-          font-weight: 400;
+          font-size: clamp(16px, 2vw, 18px);
           font-family: "Golos Text", sans-serif;
+          font-weight: 200;
           color: #59585d;
-          font-size: 14px;
           @media (max-width: 767px) {
-            width: 250px;
+            padding-top: 15px;
+            width: 75%;
           }
-          @media (min-width: 768px) and (max-width: 992px) {
-            width: 500px;
-          }
-        }
-      }
-      .divbottom {
-        .text3 {
-          h5 {
-            cursor: pointer;
-            font-size: 16px !important;
-            font-family: "Golos Text", sans-serif;
-            font-weight: 400;
-            color: #333335;
-            transition: 300ms;
-            &:hover {
-              color: #fed403;
-            }
-          }
-        }
-        .bottom {
-          hr {
-            width: 270px !important;
-          }
-          button {
-            width: 182px;
-            height: 50px;
-            font-size: 16px;
-            font-weight: 500;
-            font-family: "Golos Text", sans-serif;
-            background-color: #fed403;
-            border-radius: 5px;
-            border: 0;
-            transition: 400ms;
-            &:hover {
-              background-color: #333335;
-              color: #ffffff;
-            }
-          }
-        }
-        .img_text {
-          img {
-            @media (max-width: 767px) {
-              width: 100% !important;
-              margin-top: 30px;
-              border-radius: 7px !important;
-            }
-            @media (min-width: 768px) and (max-width: 992px) {
-              width: 70% !important;
-              margin-top: 30px;
-              border-radius: 7px !important;
-            }
-          }
-          .p1 {
-            color: #59585d;
-            font-family: "Golos Text", sans-serif;
-            font-weight: 400;
-            font-size: 12px;
-            @media (max-width: 767px) {
-              width: 200px;
-            }
-            @media (min-width: 768px) and (max-width: 992px) {
-              font-size: 15px;
-            }
-          }
-          .p2 {
-            font-size: 70px;
-            font-family: "Cal Sans", sans-serif;
-            font-weight: 400;
-            @media (max-width: 767px) {
-              font-size: 50px;
-            }
-            @media (min-width: 768px) and (max-width: 992px) {
-              font-size: 55px;
-            }
-          }
-          .p3 {
-            font-size: 25px;
-            font-family: "Cal Sans", sans-serif;
-            font-weight: 400;
-            line-height: 30px;
-            padding-top: 20px;
-            @media (max-width: 992px) {
-              width: 60%;
-            }
+          @media (min-width: 767px) and (max-width: 1024px) {
+            padding-top: 15px;
+            width: 80%;
           }
         }
       }
-    }
-  }
-}
-.sec_7 {
-  button {
-    transition: 300ms;
-    &:hover {
-      background-color: rgb(254 212 3) !important;
-      color: rgb(28 28 29) !important;
-    }
-  }
-  .inimation {
-    p {
-      color: #0b0900;
-      padding-top: 15px;
-      font-size: 24px;
-      font-family: "Cal Sans", sans-serif;
-      font-weight: 500;
-    }
-  }
-  div {
-    .imgg {
-      width: 100%;
-      height: 70vh;
-      object-fit: cover;
-    }
-  }
-  .div_absol {
-    right: 0;
-    left: 0;
-    top: 65%;
-    background-color: rgb(49 49 49);
-    @media (max-width: 767px) {
-      max-width: 95%;
-    }
-    @media (min-width: 1025px) {
-      max-width: 1300px !important;
-    }
-    .text_top {
-      .p1 {
-        font-size: 13px;
-        font-family: "Golos Text", sans-serif;
-        font-weight: 400;
-        letter-spacing: 0.15em;
-        text-transform: uppercase;
-        color: #ffffff;
-      }
-      .h2_1 {
-        font-size: 45px;
-        font-family: "Golos Text", sans-serif;
-        font-weight: 600;
-        color: #ffffff;
-        animation-duration: 3s;
-        @media (min-width: 768px) and (max-width: 1024px) {
-          font-size: 30px;
+      /* bottom */
+      .all-bottom {
+        @media (min-width: 1025px) {
+          padding-top: 20px;
         }
-      }
-      .p2 {
-        font-size: 16px;
-        font-family: "Golos Text", sans-serif;
-        font-weight: 400;
-        color: rgb(214 214 214);
-      }
-    }
-    .butt {
-      .but1 {
-        width: 167px;
-        height: 30px;
-        border-radius: 15px;
-        font-family: "Golos Text", sans-serif;
-        font-weight: 400;
-        background-color: rgb(254 212 3);
-        color: rgb(28 28 29);
-        @media (max-width: 767px) {
-          width: 100%;
-          height: auto;
-          font-size: 17px;
-          padding: 10px 0;
-          border-radius: 30px;
-          font-weight: 500;
-        }
-        @media (min-width: 768px) and (max-width: 992px) {
-          width: 100%;
-          height: auto;
-          font-size: 17px;
-          text-align: start;
-          padding-left: 30px !important;
-          padding: 10px 0;
-          border-radius: 30px;
-          font-weight: 500;
-        }
-      }
-      .but2 {
-        width: 134px;
-        height: 30px;
-        border-radius: 15px;
-        font-family: "Golos Text", sans-serif;
-        font-weight: 400;
-        background-color: rgb(55 55 55);
-        color: rgb(255 255 255);
-      }
-      .but3 {
-        width: 177px;
-        height: 30px;
-        border-radius: 15px;
-        font-family: "Golos Text", sans-serif;
-        font-weight: 400;
-        background-color: rgb(55 55 55);
-        color: rgb(255 255 255);
-      }
-    }
-    hr {
-      width: 1150px;
-      max-width: 100%;
-      color: #ffffff;
-    }
-    .div_bottom {
-      .div_imgg {
-        img {
-          width: 532px;
-          height: 270px;
+        /* Left */
+        .b-left {
           @media (max-width: 1024px) {
+            padding-bottom: 20px;
             width: 100%;
-            height: auto;
-            padding: 20px 0;
           }
-        }
-      }
-      .div_text {
-        h5 {
-          padding-bottom: 22px;
-          font-size: 24px;
-          font-family: "Inter Tight", sans-serif;
-          font-weight: 500;
-          color: #ffffff;
-        }
-        .p_parent {
-          width: 500px;
-          font-size: 17px;
-          font-family: "Inter Tight", sans-serif;
-          font-weight: 400;
-          color: rgb(214 214 214);
-          @media (max-width: 767px) {
-            width: 250px;
-          }
-          @media (min-width: 768px) and (max-width: 992px) {
-            width: 650px;
-          }
-        }
-        hr {
-          width: 520px;
-        }
-        div {
-          p {
-            margin: 0;
-            padding-bottom: 5px;
-            font-size: 17px;
-            font-family: "Golos Text", sans-serif;
-            font-weight: 200;
-            color: #ffffff;
-            @media (min-width: 768px) and (max-width: 992px) {
-              font-size: 14px;
+          .text-3 {
+            @media (max-width: 1024px) {
+              padding-bottom: 30px;
+            }
+            @media (min-width: 1025px) {
+              padding-bottom: 25px;
             }
             span {
-              padding: 5px;
+              @media (max-width: 1024px) {
+                padding-bottom: 20px;
+                width: 100%;
+              }
+              font-size: clamp(16px, 3vw, 18px);
+              font-family: "Golos Text", sans-serif;
+              font-weight: 400;
+              color: rgb(28 28 29);
+              cursor: pointer;
+              transition: 300ms;
+              &:hover{
+                color: #fed403;
+              }
             }
-            svg {
-              padding: 3px;
-              width: 20px;
-              height: 20px;
-              color: white;
-              @media (max-width: 992px) {
-                border: 1px solid #d6d3d2;
-                border-radius: 50%;
+          }
+          .text-and-button {
+            p {
+              font-size: 16px;
+              color: #59585d;
+              font-family: "Golos Text", sans-serif;
+              font-weight: 400;
+            }
+            .bt {
+              @media (min-width: 1025px) {
+                padding-top: 35px;
+              }
+              button {
+                width: 172px;
+                height: 51px;
+                font-size: 16px;
+                font-weight: 500;
+                font-family: "Golos Text", sans-serif;
+                background-color: #fed403;
+                border-radius: 5px;
+                border: 0;
+                transition: 400ms;
+                &:hover {
+                  background-color: #333335;
+                  color: #ffffff;
+                }
               }
             }
           }
         }
-        .butt {
-          padding-top: 20px;
-          button {
-            width: 167px;
-            height: 30px;
-            border-radius: 15px;
+        .b-right {
+          @media (min-width: 768px) and (max-width: 1024px) {
+            width: 70%;
+          }
+          .imgg {
+            @media (max-width: 1024px) {
+              padding-top: 30px;
+            }
+            img {
+              width: 100%;
+              object-fit: cover;
+              border-radius: 5px;
+            }
+          }
+          p {
+            @media (min-width: 1025px) {
+              padding-top: 15px;
+              margin: 0;
+            }
+            font-size: 16px;
+            color: #59585d;
             font-family: "Golos Text", sans-serif;
             font-weight: 400;
-            background-color: rgb(55 55 55);
-            color: rgb(255 255 255);
-            @media (max-width: 992px) {
-              width: 100%;
-              height: auto;
-              font-size: 17px;
-              text-align: start;
-              padding-left: 30px !important;
-              padding: 10px 0;
-              border-radius: 30px;
-              font-weight: 500;
+          }
+          .experience {
+            width: 65%;
+            .sp1 {
+              font-size: 60px;
+              color: rgb(28 28 29);
+              font-family: "Cal Sans", sans-serif;
+              font-weight: 700;
+            }
+            .sp2 {
+              font-size: 20px;
+              color: rgb(28 28 29);
+              font-family: "Cal Sans", sans-serif;
+              font-weight: 400;
             }
           }
         }
-      }
-    }
-  }
-  @media (max-width: 767px) {
-    padding-bottom: 82rem;
-  }
-  @media (min-width: 768px) and (max-width: 992px) {
-    padding-bottom: 70rem;
-  }
-  @media (min-width: 993px) {
-    padding-bottom: 32rem;
-  }
-}
-.sec_8 {
-  .container {
-    @media (min-width: 1025px) {
-      max-width: 1300px !important;
-    }
-
-    .card {
-      background-color: #f6f6f6;
-      border-radius: 5px;
-      padding: 12px 20px 150px 20px;
-      transition: 300ms;
-      h3 {
-        font-size: 40px;
-        font-family: "Golos Text", sans-serif;
-        font-weight: 800;
-      }
-      p {
-        font-size: 17px;
-        font-family: "Cal Sans", sans-serif;
-        font-weight: 400;
-        color: rgb(89 88 93);
-      }
-      div {
-        margin: 0;
-        bottom: 0;
-        left: 0;
-        p {
-          margin: 0;
-          padding: 15px 21px;
-          border-radius: 0 5px 0 5px;
-          background-color: rgb(49 49 49);
-          color: rgb(255 255 255);
-          font-family: "Golos Text", sans-serif;
-          font-weight: 800;
-        }
-      }
-      &:hover {
-        background-color: #fed403 !important;
       }
     }
   }
