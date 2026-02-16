@@ -84,6 +84,7 @@ header {
             transition: 300ms;
             &:hover {
               color: #fed403;
+              transform: translateX(10px);
             }
           }
         }
