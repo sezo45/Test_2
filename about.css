@@ -70,6 +70,7 @@ header {
         }
       }
       .off1 {
+        width: 300px;
         background-color: #313131;
         .off3 {
           a {
