@@ -357,12 +357,9 @@ header.scrolled .head {
             @media (max-width: 1024px) {
               padding-bottom: 30px;
             }
-            @media (min-width: 1025px) {
-              padding-bottom: 25px;
-            }
             span {
               @media (max-width: 1024px) {
-                padding-bottom: 20px;
+                /* padding-bottom: 20px; */
                 width: 100%;
               }
               font-size: clamp(16px, 3vw, 18px);
@@ -376,7 +373,27 @@ header.scrolled .head {
               }
             }
           }
+          .title {
+        color: white;
+        position: relative;
+        padding-bottom: 15px;
+      }
+      .title::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 70px;
+        height: 1px;
+        background-color: #e2e5e7;
+        @media (min-width: 993px) {
+          height: 2px;
+          background-color: #fed403;          
+        }
+      }
           .text-and-button {
+            @media (min-width: 1025px) {
+              padding-top: 15px;
+            }
             p {
               font-size: 16px;
               color: #59585d;
@@ -385,7 +402,7 @@ header.scrolled .head {
             }
             .bt {
               @media (min-width: 1025px) {
-                padding-top: 35px;
+                padding-top: 25px;
               }
               button {
                 width: 172px;

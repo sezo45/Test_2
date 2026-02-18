@@ -7,6 +7,17 @@
   margin: 0%;
   box-sizing: border-box;
 }
+@keyframes inmy {
+  0% {
+    transform: translateX(20px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}
 .gg {
   background-color: #fed403;
   .gg1 {
@@ -169,23 +180,26 @@ header {
       color: #ffffff;
     }
     .title {
-        color: white;
-        position: relative;
-        padding-bottom: 15px;
+      color: white;
+      position: relative;
+      padding-bottom: 15px;
+    }
+    .title::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      /* left: 50%; */
+      right: 30%;
+      width: 150px;
+      height: 2px;
+      background-color: #fed403;
+      @media (min-width: 768px) and (max-width: 1024px) {
+        right: 40%;
       }
-      .title::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        /* left: 50%; */
+      @media (min-width: 1025px) {
         right: 43%;
-        width: 150px;
-        height: 2px;
-        background-color: #fed403;
-        @media (min-width: 768px) and (max-width: 1024px) {
-          right: 40%;
-        }
       }
+    }
     .p3 {
       @media (min-width: 1024px) {
         width: 60%;
@@ -276,12 +290,9 @@ header {
             @media (max-width: 1024px) {
               padding-bottom: 30px;
             }
-            @media (min-width: 1025px) {
-              padding-bottom: 25px;
-            }
             span {
               @media (max-width: 1024px) {
-                padding-bottom: 20px;
+                /* padding-bottom: 20px; */
                 width: 100%;
               }
               font-size: clamp(16px, 3vw, 18px);
@@ -295,7 +306,27 @@ header {
               }
             }
           }
+          .title {
+            color: white;
+            position: relative;
+            padding-bottom: 15px;
+          }
+          .title::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            width: 70px;
+            height: 1px;
+            background-color: #e2e5e7;
+            @media (min-width: 993px) {
+              height: 2px;
+              background-color: #fed403;
+            }
+          }
           .text-and-button {
+            @media (min-width: 1025px) {
+              padding-top: 15px;
+            }
             p {
               font-size: 16px;
               color: #59585d;
@@ -304,7 +335,7 @@ header {
             }
             .bt {
               @media (min-width: 1025px) {
-                padding-top: 35px;
+                padding-top: 25px;
               }
               button {
                 width: 172px;
@@ -730,29 +761,475 @@ header {
     }
   }
 }
-#sec-6{
+#sec-6 {
   padding-top: 100px;
-  .container{
-    header{
-      span{
-         font-size: 12px;
-          font-family: "Golos Text", sans-serif;
-          font-weight: 500;
-          text-transform: uppercase;
-          letter-spacing: 2.5px;
-          color: rgb(28 28 29);
+  .container {
+    @media (min-width: 1025px) {
+      max-width: 1300px !important;
+    }
+    header {
+      span {
+        font-size: 12px;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        color: rgb(28 28 29);
       }
-      h2{
+      h2 {
         font-size: clamp(30px, 4vw, 52px);
+        font-family: "Cal Sans", sans-serif;
+        font-weight: 400;
+        color: rgb(28 28 29);
+      }
+      p {
+        font-size: 17px;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 300;
+        color: #59585d;
+      }
+    }
+    aside {
+      padding: 25px 0px 130px 0px;
+      .parent {
+        scrollbar-width: none;
+        .card {
+          border-radius: 5px;
+          background-color: #f6f6f6;
+          border: 0;
+          p {
+            font-size: clamp(16px, 3vw, 20px);
+            line-height: 34px;
+            font-family: "Golos Text", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+            color: #59585d;
+            padding-bottom: 16px;
+          }
+          h5 {
+            font-size: 22px;
+            font-family: "Cal Sans", sans-serif;
+            font-weight: 400;
+            color: #1c1c1d;
+          }
+          span {
+            font-size: 16px;
+            font-family: "Golos Text", sans-serif;
+            font-weight: 400;
+            color: #59585d;
+            padding-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+#sec_7 {
+  width: 100%;
+  background-color: #f6f6f6;
+  background-image:
+    linear-gradient(45deg, #e3e3e8e9, rgb(255, 255, 255)),
+    url(./images/bg_sec_11.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .container {
+    @media (min-width: 993px) {
+      max-width: 1300px !important;
+    }
+    .parent {
+      padding-top: 70px;
+      padding-bottom: 100px;
+      .data {
+        padding: 50px 40px;
+        background-color: #313131;
+        h3 {
+          font-size: clamp(24px, 10vw, 36px);
+          color: #ffffff;
           font-family: "Cal Sans", sans-serif;
           font-weight: 400;
-          color: rgb(28 28 29);
-      }
-      p{
-        font-size: 17px;
+        }
+        p {
+          font-size: 16px;
+          color: #ffffff;
           font-family: "Golos Text", sans-serif;
-          font-weight: 300;
-          color: #59585d;
+          font-weight: 400;
+          padding-bottom: 20px;
+        }
+        .input-up {
+          padding-bottom: 25px;
+          input {
+            background-color: #3d3d3d;
+            padding: 20px 18px;
+            border: 0;
+            color: #f6f6f6;
+            outline: none;
+            &:focus {
+              border: 1px solid #fed403;
+            }
+            &::placeholder {
+              color: #ffffff;
+              font-size: 17px;
+              font-family: "Golos Text", sans-serif;
+              font-weight: 400;
+            }
+          }
+          textarea {
+            background-color: #3d3d3d;
+            padding: 20px 18px;
+            border: 0;
+            color: #ffffff;
+            outline: none;
+            &:focus {
+              border: 1px solid #fed403;
+            }
+            &::placeholder {
+              color: #ffffff;
+              font-size: 17px;
+              font-family: "Golos Text", sans-serif;
+              font-weight: 400;
+            }
+          }
+        }
+        button {
+          padding: 14px 30px;
+          background-color: #fed403;
+          color: #1c1c1d;
+          border: 0;
+          font-size: 16px;
+          font-family: "Space Grotesk", sans-serif;
+          font-weight: 500;
+        }
+      }
+      .communication-1 {
+        @media (min-width: 993px) {
+          padding-left: 50px;
+        }
+        .p1 {
+          text-transform: uppercase;
+          font-size: 16px;
+          font-family: "Golos Text", sans-serif;
+          font-weight: 600;
+          color: rgb(28 28 29);
+          @media (max-width: 992px) {
+            padding-top: 50px;
+          }
+        }
+        h2 {
+          font-size: clamp(25px, 10vw, 52px);
+          font-family: "Cal Sans", sans-serif;
+          font-weight: 400;
+          padding: 15px 0px;
+          color: rgb(28 28 29);
+          animation-duration: 3s;
+        }
+        .p2 {
+          font-size: 16px;
+          font-family: "Golos Text", sans-serif;
+          font-weight: 400;
+          color: rgb(89 88 93);
+        }
+        .communication-2 {
+          padding-bottom: 20px;
+          .img-up {
+            width: 80px;
+            height: 80px;
+            background-color: #313131;
+            &:hover {
+              .animate__animated {
+                animation: animate__rubberBand !important;
+              }
+            }
+          }
+          .contact {
+            h4 {
+              font-size: 22px;
+              font-family: "Cal Sans", sans-serif;
+              font-weight: 400;
+              color: rgb(28 28 29);
+            }
+            p {
+              font-size: 17px;
+              font-family: "Golos Text", sans-serif;
+              font-weight: 400;
+              color: rgb(89 88 93);
+            }
+          }
+        }
+      }
+    }
+  }
+  .icon-grar {
+    width: 25%;
+    overflow: hidden;
+    @media (max-width: 992px) {
+      width: 50%;
+    }
+    img {
+      width: 100%;
+      animation: inmy 8s infinite;
+    }
+  }
+  .bgb {
+    background-image: url(./images/bg_sec11_2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 585px;
+    height: 100%;
+    z-index: -10;
+  }
+}
+#sec_8 {
+  background-color: #313131;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .container_1 {
+    padding-bottom: 20px;
+    /* padding-top: 25px; */
+    /* margin: 0px 30px ; */
+    padding-top: 50px;
+    @media (min-width: 993px) {
+      max-width: 1300px !important;
+    }
+    img {
+      width: 180px !important;
+      @media (max-width: 992px) {
+        padding-bottom: 30px;
+      }
+    }
+    .line {
+      padding-top: clamp(30px, 10vw, 50px);
+      color: #6c757d;
+    }
+    .contac {
+      border-bottom: 1px solid #4b5053;
+      .cv {
+        .p2,
+        .p3 {
+          font-size: 16px;
+          font-family: "Golos Text", sans-serif;
+          font-weight: 400;
+          color: rgb(139 139 139);
+          padding-left: 0;
+          cursor: pointer;
+          transition: 300ms;
+          &:hover {
+            color: #fed403;
+          }
+        }
+        .p1,
+        .p4 {
+          font-size: 16px;
+          font-family: "Golos Text", sans-serif;
+          font-weight: 400;
+          color: rgb(139 139 139);
+          transition: 300ms;
+          &:hover {
+            color: rgb(139 139 139);
+          }
+        }
+        @media (max-width: 992px) {
+          /* border-top: 1px solid #3c3e3f; */
+          /* border-right: 0; */
+        }
+        .title::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0px;
+          width: 50px;
+          height: 2px;
+          background-color: #fed403;
+        }
+        .social {
+          padding-top: 15px;
+          padding-left: 10px;
+          border-radius: 100%;
+          a {
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            border: 1px solid rgb(56 56 56);
+            border-radius: 100%;
+            svg {
+              width: 20px;
+              height: 20px;
+              color: rgb(255 255 255);
+              transition: 300ms;
+              &:hover {
+                color: #0b0900;
+                background-color: #fed403;
+              }
+            }
+          }
+        }
+      }
+      .vc{
+        @media (min-width: 993px) {
+          padding: 0px 50px;          
+        }
+        border-left: 1px solid #4b5053;
+        @media (max-width: 992px) {
+          border: 0;          
+        }
+      .cv1 {
+        h4 {
+          font-size: 20px;
+          font-family: "Cal Sans", sans-serif;
+          font-weight: 400;
+          color: #ffffff;
+          padding-bottom: 5px;
+          /* border-top: 1px solid #3c3e3f; */
+          padding-top: 0px;
+          padding-left: 25px;
+          @media (max-width: 992px) {
+            padding-top: 25px;
+            padding-left: 0;
+            border-top: 0;
+          }
+        }
+        .title {
+          color: white;
+          position: relative;
+          padding-bottom: 15px;
+        }
+        .title::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 25px;
+          width: 50px;
+          height: 2px;
+          background-color: white;
+          @media (max-width: 992px) {
+            left: 0;
+          }
+        }
+        p {
+          cursor: pointer;
+          font-size: 16px;
+          font-family: "Golos Text", sans-serif;
+          font-weight: 400;
+          color: #d2d2d2;
+          padding-left: 10px !important;
+          @media (max-width: 992px) {
+            margin-left: -25px;
+          }
+          @media (min-width: 993px) {
+            font-size: 14px;
+          }
+          transition: 300ms;
+          &:hover {
+            color: #fed403;
+            transform: translateX(15px);
+            span {
+              opacity: 1;
+            }
+          }
+          span {
+            font-size: 20px;
+            transition: all 300ms ease;
+            opacity: 0;
+          }
+        }
+      }
+      .parent{
+        padding: 20px 10px;
+        background-color: #3c3c3c;
+        h3{
+          padding-left: clamp(0px, 3vw, 20px);
+          font-size: 24px;
+          font-family: "Cal Sans", sans-serif;
+          font-weight: 400;
+          color: #ffffff;
+        }
+     .inbut {
+      display: flex;
+      background-color: #313131;
+      padding: 0px 15px;
+      input {
+        width: 70%;
+        height: 50px;
+        color: #ffffff;
+        background-color: #313131;
+        outline: none;
+        border: 0;
+        &::placeholder {
+          color: #ffffff;
+          font-family: "Golos Text", sans-serif;
+          font-weight: 400;
+        }
+        @media (max-width: 767px) {
+          width: 100%;
+        }
+        @media (min-width: 768px) and (max-width: 993px) {
+          width: 80%;
+        }
+      }
+      button {
+        width: 30%;
+        height: 35px;
+        border: 0;
+        border-radius: 5px;
+        background-color: #fed403;
+        color: rgb(49 49 49);
+        font-family: "Golos Text", sans-serif;
+        font-weight: 600;
+        transition: 300ms;
+        &:hover {
+          background-color: #e4e4e4;
+        }
+        @media (max-width: 767px) {
+          width: 40%;
+        }
+        @media (min-width: 768px) and (max-width: 993px) {
+          width: 20%;
+        }
+      }
+    }
+    button {
+        width: 116px;
+        height: 37px;
+        border: 0;
+        border-radius: 5px;
+        background-color: #fed403;
+        color: rgb(49 49 49);
+        font-family: "Golos Text", sans-serif;
+        font-weight: 600;
+        transition: 300ms;
+        &:hover {
+          background-color: #e4e4e4;
+        }
+      }
+  }
+  .imgg{
+    img{
+      width: 150%;
+      opacity: 0.5;
+      transition: 300ms;
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
+    }
+    }
+  }
+  .container_2 {
+    @media (min-width: 993px) {
+      max-width: 1300px !important;
+    }
+    .text {
+      p {
+        font-size: 18px;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 400;
+        color: #afa9a9;
+        @media (min-width: 993px) {
+          padding-bottom: 15px;
+        }
       }
     }
   }
