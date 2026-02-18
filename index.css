@@ -279,7 +279,7 @@ header.scrolled .head {
     }
   }
 }
-#sec_3 {
+#sec-3 {
   padding: 80px 0px;
   .container {
     @media (min-width: 1025px) {
@@ -371,7 +371,7 @@ header.scrolled .head {
               color: rgb(28 28 29);
               cursor: pointer;
               transition: 300ms;
-              &:hover{
+              &:hover {
                 color: #fed403;
               }
             }
@@ -694,7 +694,7 @@ header.scrolled .head {
     }
   }
 }
-.sec_6 {
+#sec-6 {
   @media (max-width: 767px) {
     padding-top: 550px;
   }
@@ -838,7 +838,7 @@ header.scrolled .head {
     }
   }
 }
-.sec_7 {
+#sec-7 {
   button {
     transition: 300ms;
     &:hover {
@@ -1049,6 +1049,7 @@ header.scrolled .head {
   }
 }
 .sec_8 {
+  padding: 80px 0;
   .container {
     @media (min-width: 1025px) {
       max-width: 1300px !important;
@@ -1061,7 +1062,7 @@ header.scrolled .head {
       transition: 300ms;
       h3 {
         font-size: 40px;
-        font-family: "Golos Text", sans-serif;
+        font-family: "Cal Sans", sans-serif;
         font-weight: 800;
       }
       p {
@@ -1090,7 +1091,7 @@ header.scrolled .head {
     }
   }
 }
-.sec_9 {
+#sec-9 {
   background-color: #313131;
   padding-top: 110px;
   padding-bottom: 22px;
@@ -1145,7 +1146,7 @@ header.scrolled .head {
     }
   }
 }
-.sec_10 {
+#sec-10 {
   padding-bottom: 3rem;
   .div_pirant {
     overflow: auto;
@@ -1156,6 +1157,10 @@ header.scrolled .head {
       transition: 300ms;
       &:hover {
         transform: scale(1.01);
+        .text {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
       img {
         object-fit: cover;
@@ -1208,10 +1213,6 @@ header.scrolled .head {
         }
       }
       transition: 300ms;
-      &:hover {
-        opacity: 1;
-        transform: translateY(0);
-      }
     }
   }
   footer {
@@ -1456,6 +1457,18 @@ header.scrolled .head {
         }
         p {
           padding-left: 0;
+          &:hover {
+            transform: translate(0);
+          }
+          @media (max-width: 992px) {
+            margin-left: 0px !important;
+          }
+        }
+        .p1,
+        .p4 {
+          &:hover {
+            color: #d2d2d2;
+          }
         }
         @media (max-width: 992px) {
           border-top: 1px solid #3c3e3f;
@@ -1504,16 +1517,30 @@ header.scrolled .head {
         }
       }
       p {
+        cursor: pointer;
         font-size: 16px;
         font-family: "Golos Text", sans-serif;
         font-weight: 400;
         color: #d2d2d2;
-        padding-left: 25px;
+        padding-left: 10px !important;
         @media (max-width: 992px) {
-          padding-left: 0;
+          margin-left: -25px;
         }
         @media (min-width: 993px) {
           font-size: 14px;
+        }
+        transition: 300ms;
+        &:hover {
+          color: #fed403;
+          transform: translateX(15px);
+          span {
+            opacity: 1;
+          }
+        }
+        span {
+          font-size: 20px;
+          transition: all 300ms ease;
+          opacity: 0;
         }
       }
     }
@@ -1536,6 +1563,10 @@ header.scrolled .head {
           width: 18px;
           height: 18px;
           color: #ffffff;
+          transition: 300ms;
+          &:hover {
+            color: #fed403;
+          }
         }
       }
     }

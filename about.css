@@ -7,6 +7,39 @@
   margin: 0%;
   box-sizing: border-box;
 }
+.gg {
+  background-color: #fed403;
+  .gg1 {
+    div {
+      width: 20px;
+      height: 24px;
+      svg {
+        color: #fed403;
+      }
+    }
+    p {
+      font-size: 14px;
+      font-family: "Golos Text", sans-serif;
+      font-weight: 400;
+      color: rgb(28 28 29);
+    }
+    a {
+      font-size: 14px;
+      font-family: "Golos Text", sans-serif;
+      font-weight: 400;
+      color: rgb(28 28 29);
+    }
+  }
+  .gg2 {
+    p {
+      cursor: pointer;
+      font-size: 14px;
+      font-family: "Golos Text", sans-serif;
+      font-weight: 400;
+      color: rgb(28 28 29);
+    }
+  }
+}
 header {
   transition: all 0.4s ease-in-out;
   padding: 0;
@@ -18,7 +51,6 @@ header {
     .head {
       width: 100%;
       box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-      /* border-bottom: 1px solid #59585d; */
       background-color: #ffffff;
       transition: all 0.4s ease-in-out;
       padding: 0 2px;
@@ -92,7 +124,81 @@ header {
     }
   }
 }
-#sec-1 {
+#bg {
+  @media (min-width: 1025px) {
+    padding: 70px 0px;
+  }
+  background-image:
+    linear-gradient(rgba(26, 23, 23, 0.712)), url(./images/bg-about.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  .container {
+    .back {
+      padding-top: 60px;
+      a {
+        font-size: 15px;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 500;
+        color: #ffffff;
+        transition: 300ms;
+        &:hover {
+          color: #fed403;
+        }
+      }
+      .p1 {
+        font-size: 25px;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 500;
+        color: #ffffff;
+        margin: 0;
+      }
+      .p2 {
+        font-size: 15px;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 500;
+        color: #ffffff90;
+        margin: 0;
+      }
+    }
+    h3 {
+      font-size: clamp(34px, 4vw, 54px);
+      font-family: "Cal Sans", sans-serif;
+      font-weight: 400;
+      color: #ffffff;
+    }
+    .title {
+        color: white;
+        position: relative;
+        padding-bottom: 15px;
+      }
+      .title::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        /* left: 50%; */
+        right: 43%;
+        width: 150px;
+        height: 2px;
+        background-color: #fed403;
+        @media (min-width: 768px) and (max-width: 1024px) {
+          right: 40%;
+        }
+      }
+    .p3 {
+      @media (min-width: 1024px) {
+        width: 60%;
+      }
+      padding-top: 15px;
+      font-size: 16px;
+      font-family: "Golos Text", sans-serif;
+      font-weight: 400;
+      color: rgb(227 224 220);
+    }
+  }
+}
+#sec-2 {
   padding: 80px 0px;
   .container {
     @media (min-width: 1025px) {
@@ -184,7 +290,7 @@ header {
               color: rgb(28 28 29);
               cursor: pointer;
               transition: 300ms;
-              &:hover{
+              &:hover {
                 color: #fed403;
               }
             }
@@ -258,6 +364,395 @@ header {
             }
           }
         }
+      }
+    }
+  }
+}
+#sec-3 {
+  button {
+    transition: 300ms;
+    &:hover {
+      background-color: rgb(254 212 3) !important;
+      color: rgb(28 28 29) !important;
+    }
+  }
+  .inimation {
+    p {
+      color: #0b0900;
+      padding-top: 15px;
+      font-size: 24px;
+      font-family: "Cal Sans", sans-serif;
+      font-weight: 500;
+    }
+  }
+  div {
+    .imgg {
+      width: 100%;
+      height: 70vh;
+      object-fit: cover;
+    }
+  }
+  .div_absol {
+    right: 0;
+    left: 0;
+    top: 65%;
+    background-color: rgb(49 49 49);
+    @media (max-width: 767px) {
+      max-width: 95%;
+    }
+    @media (min-width: 1025px) {
+      max-width: 1300px !important;
+    }
+    .text_top {
+      .p1 {
+        font-size: 13px;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: #ffffff;
+      }
+      .h2_1 {
+        font-size: 45px;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 600;
+        color: #ffffff;
+        animation-duration: 3s;
+        @media (min-width: 768px) and (max-width: 1024px) {
+          font-size: 30px;
+        }
+      }
+      .p2 {
+        font-size: 16px;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 400;
+        color: rgb(214 214 214);
+      }
+    }
+    .butt {
+      .but1 {
+        width: 167px;
+        height: 30px;
+        border-radius: 15px;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 400;
+        background-color: rgb(254 212 3);
+        color: rgb(28 28 29);
+        @media (max-width: 767px) {
+          width: 100%;
+          height: auto;
+          font-size: 17px;
+          padding: 10px 0;
+          border-radius: 30px;
+          font-weight: 500;
+        }
+        @media (min-width: 768px) and (max-width: 992px) {
+          width: 100%;
+          height: auto;
+          font-size: 17px;
+          text-align: start;
+          padding-left: 30px !important;
+          padding: 10px 0;
+          border-radius: 30px;
+          font-weight: 500;
+        }
+      }
+      .but2 {
+        width: 134px;
+        height: 30px;
+        border-radius: 15px;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 400;
+        background-color: rgb(55 55 55);
+        color: rgb(255 255 255);
+      }
+      .but3 {
+        width: 177px;
+        height: 30px;
+        border-radius: 15px;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 400;
+        background-color: rgb(55 55 55);
+        color: rgb(255 255 255);
+      }
+    }
+    hr {
+      width: 1150px;
+      max-width: 100%;
+      color: #ffffff;
+    }
+    .div_bottom {
+      .div_imgg {
+        img {
+          width: 532px;
+          height: 270px;
+          @media (max-width: 1024px) {
+            width: 100%;
+            height: auto;
+            padding: 20px 0;
+          }
+        }
+      }
+      .div_text {
+        h5 {
+          padding-bottom: 22px;
+          font-size: 24px;
+          font-family: "Inter Tight", sans-serif;
+          font-weight: 500;
+          color: #ffffff;
+        }
+        .p_parent {
+          width: 500px;
+          font-size: 17px;
+          font-family: "Inter Tight", sans-serif;
+          font-weight: 400;
+          color: rgb(214 214 214);
+          @media (max-width: 767px) {
+            width: 250px;
+          }
+          @media (min-width: 768px) and (max-width: 992px) {
+            width: 650px;
+          }
+        }
+        hr {
+          width: 520px;
+        }
+        div {
+          p {
+            margin: 0;
+            padding-bottom: 5px;
+            font-size: 17px;
+            font-family: "Golos Text", sans-serif;
+            font-weight: 200;
+            color: #ffffff;
+            @media (min-width: 768px) and (max-width: 992px) {
+              font-size: 14px;
+            }
+            span {
+              padding: 5px;
+            }
+            svg {
+              padding: 3px;
+              width: 20px;
+              height: 20px;
+              color: white;
+              @media (max-width: 992px) {
+                border: 1px solid #d6d3d2;
+                border-radius: 50%;
+              }
+            }
+          }
+        }
+        .butt {
+          padding-top: 20px;
+          button {
+            width: 167px;
+            height: 30px;
+            border-radius: 15px;
+            font-family: "Golos Text", sans-serif;
+            font-weight: 400;
+            background-color: rgb(55 55 55);
+            color: rgb(255 255 255);
+            @media (max-width: 992px) {
+              width: 100%;
+              height: auto;
+              font-size: 17px;
+              text-align: start;
+              padding-left: 30px !important;
+              padding: 10px 0;
+              border-radius: 30px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    padding-bottom: 82rem;
+  }
+  @media (min-width: 768px) and (max-width: 992px) {
+    padding-bottom: 70rem;
+  }
+  @media (min-width: 993px) {
+    padding-bottom: 32rem;
+  }
+}
+#sec-4 {
+  padding: 80px 0px;
+  .container {
+    @media (min-width: 1025px) {
+      max-width: 1300px !important;
+    }
+
+    .card {
+      background-color: #f6f6f6;
+      border-radius: 5px;
+      padding: 12px 15px 180px 20px;
+      transition: 300ms;
+      h3 {
+        font-size: 40px;
+        font-family: "Cal Sans", sans-serif;
+        font-weight: 800;
+      }
+      p {
+        font-size: 17px;
+        font-family: "Cal Sans", sans-serif;
+        font-weight: 400;
+        color: rgb(89 88 93);
+      }
+      div {
+        margin: 0;
+        bottom: 0;
+        left: 0;
+        p {
+          margin: 0;
+          padding: 15px 21px;
+          border-radius: 0 5px 0 5px;
+          background-color: rgb(49 49 49);
+          color: rgb(255 255 255);
+          font-family: "Golos Text", sans-serif;
+          font-weight: 800;
+        }
+      }
+      &:hover {
+        background-color: #fed403 !important;
+      }
+    }
+  }
+}
+#sec-5 {
+  background-color: #f6f6f6;
+  .container {
+    @media (min-width: 1025px) {
+      max-width: 1300px !important;
+    }
+    header {
+      padding-top: 100px;
+      padding-bottom: 25px;
+      .div1 {
+        span {
+          font-size: clamp(12px, 2vw, 16px);
+          font-family: "Golos Text", sans-serif;
+          font-weight: 500;
+          text-transform: uppercase;
+          letter-spacing: 2.5px;
+          color: rgb(28 28 29);
+        }
+        h2 {
+          padding: 15px 0px;
+          margin: 0;
+          font-size: clamp(30px, 4vw, 52px);
+          font-family: "Cal Sans", sans-serif;
+          font-weight: 400;
+          color: rgb(28 28 29);
+        }
+        p {
+          font-size: 16px;
+          font-family: "Golos Text", sans-serif;
+          font-weight: 500;
+          color: #59585d;
+        }
+      }
+      .div2 {
+        padding-bottom: 15px;
+        button {
+          width: 221px;
+          height: 52px;
+          font-size: 16px;
+          font-weight: 500;
+          font-family: "Golos Text", sans-serif;
+          background-color: #fed403;
+          border-radius: 5px;
+          border: 0;
+          transition: 300ms;
+          &:hover {
+            color: #ffffff;
+            background-color: #1c1c1d;
+          }
+        }
+      }
+    }
+    main {
+      padding-bottom: 100px;
+      .text {
+        @media (max-width: 992px) {
+          padding-top: 30px;
+        }
+        .gridd {
+          div {
+            h3 {
+              cursor: pointer;
+              font-size: 20px;
+              font-family: "Cal Sans", sans-serif;
+              font-weight: 400;
+              color: #1c1c1d;
+
+              transition: 300ms;
+              &:hover {
+                color: #fed403;
+                svg {
+                  color: #fed403;
+                }
+              }
+            }
+            p {
+              font-size: 16px;
+              font-family: "Golos Text", sans-serif;
+              font-weight: 500;
+              color: #59585d;
+            }
+            svg {
+              transition: 300ms;
+              &:hover {
+                color: #fed403;
+              }
+            }
+          }
+          span {
+            hr {
+              color: #a6a6b6;
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    marquee {
+      cursor: pointer;
+      background-color: white;
+      border: 1px solid rgb(214, 211, 211);
+      .inimation {
+        scrollbar-width: none;
+        height: 100px;
+      }
+    }
+  }
+}
+#sec-6{
+  padding-top: 100px;
+  .container{
+    header{
+      span{
+         font-size: 12px;
+          font-family: "Golos Text", sans-serif;
+          font-weight: 500;
+          text-transform: uppercase;
+          letter-spacing: 2.5px;
+          color: rgb(28 28 29);
+      }
+      h2{
+        font-size: clamp(30px, 4vw, 52px);
+          font-family: "Cal Sans", sans-serif;
+          font-weight: 400;
+          color: rgb(28 28 29);
+      }
+      p{
+        font-size: 17px;
+          font-family: "Golos Text", sans-serif;
+          font-weight: 300;
+          color: #59585d;
       }
     }
   }
