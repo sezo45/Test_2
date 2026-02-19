@@ -144,7 +144,7 @@ header.scrolled {
     padding: 70px 0px;
   }
   background-image:
-    linear-gradient(rgba(26, 23, 23, 0.712)), url(./images/bg-about.jpg);
+    linear-gradient(rgba(26, 23, 23, 0.712)), url(./images/bg-services.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -192,7 +192,6 @@ header.scrolled {
       content: "";
       position: absolute;
       bottom: 0;
-      /* left: 50%; */
       right: 30%;
       width: 150px;
       height: 2px;
@@ -216,188 +215,107 @@ header.scrolled {
     }
   }
 }
-#sec-2 {
-  padding: 80px 0px;
+.sec_2 {
   .container {
-    @media (min-width: 1025px) {
-      max-width: 1300px !important;
+    @media (max-width: 992px) {
+      max-width: 90%;
     }
-    @media (min-width: 768px) and (max-width: 1024px) {
-      max-width: 800px;
+    @media (min-width: 1339px) {
+      max-width: 1300px;
     }
-    .Left_img {
-      overflow: hidden;
-      @media (max-width: 1024px) {
-        padding-bottom: 20px;
-        width: 100%;
-      }
-      img {
-        animation-duration: 2s;
-        border-radius: 5px;
-        @media (max-width: 767px) {
-          width: 95%;
+    main {
+      .div_main {
+        overflow: hidden;
+        background-color: #f6f6f6;
+        border-radius: 7px;
+        border: 2px solid #e3e3e8;
+        transition: 400ms;
+        &:hover {
+          .animate__animated {
+            animation: animate__rubberBand !important;
+          }
+          .opacit {
+            opacity: 1;
+            transform: translate(0);
+          }
         }
-      }
-    }
-    .all-right {
-      @media (min-width: 768px) and (max-width: 1024px) {
-        width: 100%;
-      }
-      .text-top {
-        .p1 {
-          font-size: clamp(14px, 3vw, 16px);
-          text-transform: uppercase;
+        .up {
+          width: 75px;
+          height: 75px;
+          border-radius: 5px;
+          background-color: #59585d2d;
+          position: relative;
+          .son {
+            background-color: rgb(49 49 49);
+            width: 75px;
+            height: 75px;
+            border-radius: 5px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+          }
+        }
+        h4 {
+          cursor: pointer;
+          font-size: 22px;
+          color: #1c1c1d;
+          font-family: "Cal Sans", sans-serif;
+          font-weight: 400;
+          transition: 400ms;
+          &:hover {
+            color: #fed403;
+          }
+        }
+        p {
+          font-size: 16px;
+          color: #59585d;
           font-family: "Golos Text", sans-serif;
           font-weight: 400;
-          color: #59585d;
-          @media (max-width: 1024px) {
-            padding-top: 10px;
-          }
+          line-height: 1.68;
+          letter-spacing: 3;
         }
-        h2 {
-          font-size: clamp(32px, 4vw, 52px);
-          font-family: "Cal Sans", sans-serif;
+        h6 {
+          font-size: 14px;
+          color: #1c1c1d;
           font-weight: 500;
-          color: rgb(28 28 29);
-          animation-duration: 2s;
-        }
-        .p2 {
-          font-size: clamp(16px, 2vw, 18px);
           font-family: "Golos Text", sans-serif;
-          font-weight: 200;
-          color: #59585d;
-          @media (max-width: 767px) {
-            padding-top: 15px;
-            width: 75%;
+          span {
+            padding-left: 5px;
           }
-          @media (min-width: 767px) and (max-width: 1024px) {
-            padding-top: 15px;
-            width: 80%;
-          }
-        }
-      }
-      .all-bottom {
-        @media (min-width: 1025px) {
-          padding-top: 20px;
-        }
-        .b-left {
-          @media (max-width: 1024px) {
-            padding-bottom: 20px;
-            width: 100%;
-          }
-          .text-3 {
-            @media (max-width: 1024px) {
-              padding-bottom: 30px;
-            }
-            span {
-              @media (max-width: 1024px) {
-                width: 100%;
-              }
-              font-size: clamp(16px, 3vw, 18px);
-              font-family: "Golos Text", sans-serif;
-              font-weight: 400;
-              color: rgb(28 28 29);
-              cursor: pointer;
-              transition: 300ms;
-              &:hover {
-                color: #fed403;
-              }
-            }
-          }
-          .title {
-            color: white;
-            position: relative;
-            padding-bottom: 15px;
-          }
-          .title::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            width: 70px;
-            height: 1px;
-            background-color: #e2e5e7;
-            @media (min-width: 993px) {
-              height: 2px;
-              background-color: #fed403;
-            }
-          }
-          .text-and-button {
-            @media (min-width: 1025px) {
-              padding-top: 15px;
-            }
-            p {
-              font-size: 16px;
-              color: #59585d;
-              font-family: "Golos Text", sans-serif;
-              font-weight: 400;
-            }
-            .bt {
-              @media (min-width: 1025px) {
-                padding-top: 25px;
-              }
-              button {
-                width: 172px;
-                height: 51px;
-                font-size: 16px;
-                font-weight: 500;
-                font-family: "Golos Text", sans-serif;
-                background-color: #fed403;
-                border-radius: 5px;
-                border: 0;
-                transition: 400ms;
-                &:hover {
-                  background-color: #333335;
-                  color: #ffffff;
-                }
-              }
-            }
+          svg {
+            width: 27px;
+            height: 27px;
+            padding: 5px;
+            border: 2px solid #e3e3e8;
+            border-radius: 100%;
+            background-color: #f6f6f6;
+            color: #000000;
           }
         }
-        .b-right {
-          @media (min-width: 768px) and (max-width: 1024px) {
-            width: 70%;
+        button {
+          width: 100%;
+          height: 60px;
+          font-size: 18px;
+          font-family: "Golos Text", sans-serif;
+          background-color: #1c1c1d00;
+          border-radius: 7px;
+          border: 2px solid #e3e3e8;
+          transition: 400ms;
+          &:hover {
+            background-color: #fed403;
           }
-          .imgg {
-            @media (max-width: 1024px) {
-              padding-top: 30px;
-            }
-            img {
-              width: 100%;
-              object-fit: cover;
-              border-radius: 5px;
-            }
-          }
-          p {
-            @media (min-width: 1025px) {
-              padding-top: 15px;
-              margin: 0;
-            }
-            font-size: 16px;
-            color: #59585d;
-            font-family: "Golos Text", sans-serif;
-            font-weight: 400;
-          }
-          .experience {
-            width: 65%;
-            .sp1 {
-              font-size: 60px;
-              color: rgb(28 28 29);
-              font-family: "Cal Sans", sans-serif;
-              font-weight: 700;
-            }
-            .sp2 {
-              font-size: 20px;
-              color: rgb(28 28 29);
-              font-family: "Cal Sans", sans-serif;
-              font-weight: 400;
-            }
-          }
+        }
+        .opacit {
+          opacity: 0;
+          transform: translate(100px, -100px);
+          transition: all 0.5s ease;
         }
       }
     }
   }
 }
 #sec-3 {
+  padding-top: 60px;
   button {
     transition: 300ms;
     &:hover {
@@ -460,7 +378,7 @@ header.scrolled {
     }
     .butt {
       .but1 {
-        width: 167px;
+        width: 175px;
         height: 30px;
         border-radius: 15px;
         font-family: "Golos Text", sans-serif;
@@ -496,7 +414,7 @@ header.scrolled {
         color: rgb(255 255 255);
       }
       .but3 {
-        width: 177px;
+        width: 180px;
         height: 30px;
         border-radius: 15px;
         font-family: "Golos Text", sans-serif;
@@ -608,163 +526,9 @@ header.scrolled {
   }
 }
 #sec-4 {
-  padding: 80px 0px;
   .container {
-    @media (min-width: 1025px) {
-      max-width: 1300px !important;
-    }
-
-    .card {
-      background-color: #f6f6f6;
-      border-radius: 5px;
-      padding: 12px 15px 180px 20px;
-      transition: 300ms;
-      h3 {
-        font-size: 40px;
-        font-family: "Cal Sans", sans-serif;
-        font-weight: 800;
-      }
-      p {
-        font-size: 17px;
-        font-family: "Cal Sans", sans-serif;
-        font-weight: 400;
-        color: rgb(89 88 93);
-      }
-      div {
-        margin: 0;
-        bottom: 0;
-        left: 0;
-        p {
-          margin: 0;
-          padding: 15px 21px;
-          border-radius: 0 5px 0 5px;
-          background-color: rgb(49 49 49);
-          color: rgb(255 255 255);
-          font-family: "Golos Text", sans-serif;
-          font-weight: 800;
-        }
-      }
-      &:hover {
-        background-color: #fed403 !important;
-      }
-    }
-  }
-}
-#sec-5 {
-  background-color: #f6f6f6;
-  .container {
-    @media (min-width: 1025px) {
-      max-width: 1300px !important;
-    }
-    header {
-      padding-top: 100px;
-      padding-bottom: 25px;
-      .div1 {
-        span {
-          font-size: clamp(12px, 2vw, 16px);
-          font-family: "Golos Text", sans-serif;
-          font-weight: 500;
-          text-transform: uppercase;
-          letter-spacing: 2.5px;
-          color: rgb(28 28 29);
-        }
-        h2 {
-          padding: 15px 0px;
-          margin: 0;
-          font-size: clamp(30px, 4vw, 52px);
-          font-family: "Cal Sans", sans-serif;
-          font-weight: 400;
-          color: rgb(28 28 29);
-          animation-duration: 3s;
-        }
-        p {
-          font-size: 16px;
-          font-family: "Golos Text", sans-serif;
-          font-weight: 500;
-          color: #59585d;
-        }
-      }
-      .div2 {
-        padding-bottom: 15px;
-        button {
-          width: 221px;
-          height: 52px;
-          font-size: 16px;
-          font-weight: 500;
-          font-family: "Golos Text", sans-serif;
-          background-color: #fed403;
-          border-radius: 5px;
-          border: 0;
-          transition: 300ms;
-          &:hover {
-            color: #ffffff;
-            background-color: #1c1c1d;
-          }
-        }
-      }
-    }
-    main {
-      padding-bottom: 100px;
-      .text {
-        @media (max-width: 992px) {
-          padding-top: 30px;
-        }
-        .gridd {
-          div {
-            h3 {
-              cursor: pointer;
-              font-size: 20px;
-              font-family: "Cal Sans", sans-serif;
-              font-weight: 400;
-              color: #1c1c1d;
-
-              transition: 300ms;
-              &:hover {
-                color: #fed403;
-                svg {
-                  color: #fed403;
-                }
-              }
-            }
-            p {
-              font-size: 16px;
-              font-family: "Golos Text", sans-serif;
-              font-weight: 500;
-              color: #59585d;
-            }
-            svg {
-              transition: 300ms;
-              &:hover {
-                color: #fed403;
-              }
-            }
-          }
-          span {
-            hr {
-              color: #a6a6b6;
-            }
-          }
-        }
-      }
-    }
-  }
-  footer {
-    marquee {
-      cursor: pointer;
-      background-color: white;
-      border: 1px solid rgb(214, 211, 211);
-      .inimation {
-        scrollbar-width: none;
-        height: 100px;
-      }
-    }
-  }
-}
-#sec-6 {
-  padding-top: 100px;
-  .container {
-    @media (min-width: 1025px) {
-      max-width: 1300px !important;
+    @media (min-width: 1339px) {
+      max-width: 1300px;
     }
     header {
       span {
@@ -790,34 +554,311 @@ header.scrolled {
       }
     }
     aside {
-      padding: 25px 0px 130px 0px;
-      .parent {
-        scrollbar-width: none;
+      padding-top: 50px;
+      padding-bottom: 130px;
+      .gridd {
         .card {
-          border-radius: 5px;
           background-color: #f6f6f6;
-          border: 0;
-          p {
-            font-size: clamp(16px, 3vw, 20px);
-            line-height: 34px;
-            font-family: "Golos Text", sans-serif;
-            font-weight: 400;
-            font-style: italic;
-            color: #59585d;
-            padding-bottom: 16px;
+          border-radius: 100px 5px 5px 5px;
+          border: 1px solid #e3e3e8;
+          @media (max-width: 767px) {
+            border-radius: 5px;
           }
-          h5 {
+          &:hover {
+            .tex {
+              background-color: #fed403;
+            }
+          }
+          .parent {
+            img {
+              width: 100%;
+              border-radius: 100px 0px 0px 100px;
+            }
+            div {
+              width: 50px;
+              height: 50px;
+              background-color: white;
+              border-radius: 50%;
+              font-size: 22px;
+              font-family: "Golos Text", sans-serif;
+              font-weight: 600;
+              left: 40%;
+              right: 0;
+              bottom: -15px;
+              transition: 300ms;
+              @media (max-width: 767px) {
+                left: 73%;
+                top: 10%;
+              }
+            }
+          }
+          h4 {
+            padding-top: 50px;
             font-size: 22px;
+            color: #1c1c1d;
             font-family: "Cal Sans", sans-serif;
             font-weight: 400;
-            color: #1c1c1d;
+            transition: 400ms;
+            &:hover {
+              color: #fed403;
+            }
           }
-          span {
+          p {
+            padding-top: 10px;
             font-size: 16px;
+            color: #59585d;
             font-family: "Golos Text", sans-serif;
             font-weight: 400;
+            line-height: 1.68;
+            letter-spacing: 3;
+          }
+        }
+      }
+    }
+  }
+}
+#sec-5 {
+  background-color: #f6f6f6;
+  .container {
+    @media (min-width: 1339px) {
+      max-width: 1300px;
+    }
+    header {
+      span {
+        font-size: 12px;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        color: rgb(28 28 29);
+      }
+      h2 {
+        font-size: clamp(30px, 4vw, 52px);
+        font-family: "Cal Sans", sans-serif;
+        font-weight: 400;
+        color: rgb(28 28 29);
+        animation-duration: 3s;
+      }
+      p {
+        font-size: 17px;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 300;
+        color: #59585d;
+      }
+    }
+    main {
+      padding-top: 50px;
+      padding-bottom: 130px;
+      .gridd {
+        .card {
+          padding: 35px 25px;
+          .spa1 {
+            font-size: 12px;
+            font-family: "Golos Text", sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            color: rgb(28 28 29);
+          }
+          .div1 {
+            h3 {
+              font-size: 40px;
+              color: #1c1c1d;
+              font-family: "Cal Sans", sans-serif;
+              font-weight: 400;
+              transition: 400ms;
+            }
+            span {
+              font-size: 19px;
+              font-family: "Golos Text", sans-serif;
+              font-weight: 500;
+              color: #59585d;
+            }
+          }
+          .p1 {
+            font-size: 17px;
+            font-family: "Golos Text", sans-serif;
+            font-weight: 500;
             color: #59585d;
+          }
+          .div2 {
+            padding-top: 15px;
             padding-bottom: 30px;
+            button {
+              height: 50px;
+              background-color: #313131;
+              color: #ffffff;
+              font-size: 17px;
+              font-family: "Golos Text", sans-serif;
+              font-weight: 500;
+              border: 0;
+              transition: 300ms;
+              &:hover {
+                background-color: #fed403;
+                color: #313131;
+              }
+            }
+          }
+          .p2,
+          .p3,
+          .p4,
+          .p5 {
+            font-size: 17px;
+            font-family: "Golos Text", sans-serif;
+            font-weight: 400;
+            color: rgb(89 88 93);
+          }
+          .p6,
+          .p7 {
+            font-size: 17px;
+            font-family: "Golos Text", sans-serif;
+            font-weight: 400;
+            color: rgb(89 88 93);
+            opacity: 0.5;
+          }
+        }
+      }
+      .gridd2 {
+        .card {
+          background-color: #313131;
+          padding: 35px 25px;
+          .spa1 {
+            font-size: 12px;
+            font-family: "Golos Text", sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            color: white;
+          }
+          .spa2 {
+            hr {
+              color: rgb(197, 191, 191);
+            }
+          }
+          .div1 {
+            h3 {
+              font-size: 40px;
+              color: #fed403;
+              font-family: "Cal Sans", sans-serif;
+              font-weight: 400;
+              transition: 400ms;
+            }
+            span {
+              font-size: 19px;
+              font-family: "Golos Text", sans-serif;
+              font-weight: 500;
+              color: #fed403;
+            }
+          }
+          .p1 {
+            font-size: 17px;
+            font-family: "Golos Text", sans-serif;
+            font-weight: 500;
+            color: #ffffffb8;
+          }
+          .div2 {
+            padding-top: 15px;
+            padding-bottom: 30px;
+            button {
+              height: 50px;
+              background-color: #fed403;
+              color: #313131;
+              font-size: 17px;
+              font-family: "Golos Text", sans-serif;
+              font-weight: 500;
+              border: 0;
+              transition: 300ms;
+              &:hover {
+                background-color: #ffffff;
+                color: #313131;
+              }
+            }
+          }
+          .p2,
+          .p3,
+          .p4,
+          .p5 {
+            font-size: 17px;
+            font-family: "Golos Text", sans-serif;
+            font-weight: 400;
+            color: #ffffffb8;
+          }
+          .p6,
+          .p7 {
+            font-size: 17px;
+            font-family: "Golos Text", sans-serif;
+            font-weight: 400;
+            color: #8a8a8a;
+            opacity: 0.5;
+          }
+        }
+      }
+      .gridd3 {
+        .card {
+          padding: 35px 25px;
+          .spa1 {
+            font-size: 12px;
+            font-family: "Golos Text", sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            color: rgb(28 28 29);
+          }
+          .div1 {
+            h3 {
+              font-size: 40px;
+              color: #1c1c1d;
+              font-family: "Cal Sans", sans-serif;
+              font-weight: 400;
+              transition: 400ms;
+            }
+            span {
+              font-size: 19px;
+              font-family: "Golos Text", sans-serif;
+              font-weight: 500;
+              color: #59585d;
+            }
+          }
+          .p1 {
+            font-size: 17px;
+            font-family: "Golos Text", sans-serif;
+            font-weight: 500;
+            color: #59585d;
+          }
+          .div2 {
+            padding-top: 15px;
+            padding-bottom: 30px;
+            button {
+              height: 50px;
+              background-color: #313131;
+              color: #ffffff;
+              font-size: 17px;
+              font-family: "Golos Text", sans-serif;
+              font-weight: 500;
+              border: 0;
+              transition: 300ms;
+              &:hover {
+                background-color: #fed403;
+                color: #313131;
+              }
+            }
+          }
+          .p2,
+          .p3,
+          .p4,
+          .p5 {
+            font-size: 17px;
+            font-family: "Golos Text", sans-serif;
+            font-weight: 400;
+            color: rgb(89 88 93);
+          }
+          .p6,
+          .p7 {
+            font-size: 17px;
+            font-family: "Golos Text", sans-serif;
+            font-weight: 400;
+            color: rgb(89 88 93);
+            opacity: 0.5;
           }
         }
       }
@@ -1207,7 +1248,7 @@ header.scrolled {
             &:hover {
               opacity: 1;
             }
-            @media (min-width:768px) {
+            @media (min-width: 768px) {
               padding-bottom: 75px;
             }
           }
@@ -1220,10 +1261,10 @@ header.scrolled {
       max-width: 1300px !important;
     }
     .text {
-      .tex1{
+      .tex1 {
         cursor: pointer;
         transition: 300ms;
-        &:hover{
+        &:hover {
           color: #fed403;
         }
       }
