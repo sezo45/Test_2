@@ -1251,7 +1251,254 @@ header.scrolled .head {
     }
   }
 }
-#sec_11 {
+#sec-11 {
+  .container {
+    @media (min-width: 1339px) {
+      max-width: 1300px;
+    }
+    header {
+      span {
+        font-size: 12px;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        color: rgb(28 28 29);
+      }
+      h2 {
+        font-size: clamp(30px, 4vw, 52px);
+        font-family: "Cal Sans", sans-serif;
+        font-weight: 400;
+        color: rgb(28 28 29);
+        animation-duration: 3s;
+      }
+      p {
+        font-size: 17px;
+        font-family: "Golos Text", sans-serif;
+        font-weight: 300;
+        color: #59585d;
+      }
+    }
+    main {
+      padding-top: 50px;
+      padding-bottom: 130px;
+      .gridd {
+        .card {
+          padding: 35px 25px;
+          .spa1 {
+            font-size: 12px;
+            font-family: "Golos Text", sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            color: rgb(28 28 29);
+          }
+          .div1 {
+            h3 {
+              font-size: 40px;
+              color: #1c1c1d;
+              font-family: "Cal Sans", sans-serif;
+              font-weight: 400;
+              transition: 400ms;
+            }
+            span {
+              font-size: 19px;
+              font-family: "Golos Text", sans-serif;
+              font-weight: 500;
+              color: #59585d;
+            }
+          }
+          .p1 {
+            font-size: 17px;
+            font-family: "Golos Text", sans-serif;
+            font-weight: 500;
+            color: #59585d;
+          }
+          .div2 {
+            padding-top: 15px;
+            padding-bottom: 30px;
+            button {
+              height: 50px;
+              background-color: #313131;
+              color: #ffffff;
+              font-size: 17px;
+              font-family: "Golos Text", sans-serif;
+              font-weight: 500;
+              border: 0;
+              transition: 300ms;
+              &:hover {
+                background-color: #fed403;
+                color: #313131;
+              }
+            }
+          }
+          .p2,
+          .p3,
+          .p4,
+          .p5 {
+            font-size: 17px;
+            font-family: "Golos Text", sans-serif;
+            font-weight: 400;
+            color: rgb(89 88 93);
+          }
+          .p6,
+          .p7 {
+            font-size: 17px;
+            font-family: "Golos Text", sans-serif;
+            font-weight: 400;
+            color: rgb(89 88 93);
+            opacity: 0.5;
+          }
+        }
+      }
+      .gridd2 {
+        .card {
+          background-color: #313131;
+          padding: 35px 25px;
+          .spa1 {
+            font-size: 12px;
+            font-family: "Golos Text", sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            color: white;
+          }
+          .spa2 {
+            hr {
+              color: rgb(197, 191, 191);
+            }
+          }
+          .div1 {
+            h3 {
+              font-size: 40px;
+              color: #fed403;
+              font-family: "Cal Sans", sans-serif;
+              font-weight: 400;
+              transition: 400ms;
+            }
+            span {
+              font-size: 19px;
+              font-family: "Golos Text", sans-serif;
+              font-weight: 500;
+              color: #fed403;
+            }
+          }
+          .p1 {
+            font-size: 17px;
+            font-family: "Golos Text", sans-serif;
+            font-weight: 500;
+            color: #ffffffb8;
+          }
+          .div2 {
+            padding-top: 15px;
+            padding-bottom: 30px;
+            button {
+              height: 50px;
+              background-color: #fed403;
+              color: #313131;
+              font-size: 17px;
+              font-family: "Golos Text", sans-serif;
+              font-weight: 500;
+              border: 0;
+              transition: 300ms;
+              &:hover {
+                background-color: #ffffff;
+                color: #313131;
+              }
+            }
+          }
+          .p2,
+          .p3,
+          .p4,
+          .p5 {
+            font-size: 17px;
+            font-family: "Golos Text", sans-serif;
+            font-weight: 400;
+            color: #ffffffb8;
+          }
+          .p6,
+          .p7 {
+            font-size: 17px;
+            font-family: "Golos Text", sans-serif;
+            font-weight: 400;
+            color: #8a8a8a;
+            opacity: 0.5;
+          }
+        }
+      }
+      .gridd3 {
+        .card {
+          padding: 35px 25px;
+          .spa1 {
+            font-size: 12px;
+            font-family: "Golos Text", sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            color: rgb(28 28 29);
+          }
+          .div1 {
+            h3 {
+              font-size: 40px;
+              color: #1c1c1d;
+              font-family: "Cal Sans", sans-serif;
+              font-weight: 400;
+              transition: 400ms;
+            }
+            span {
+              font-size: 19px;
+              font-family: "Golos Text", sans-serif;
+              font-weight: 500;
+              color: #59585d;
+            }
+          }
+          .p1 {
+            font-size: 17px;
+            font-family: "Golos Text", sans-serif;
+            font-weight: 500;
+            color: #59585d;
+          }
+          .div2 {
+            padding-top: 15px;
+            padding-bottom: 30px;
+            button {
+              height: 50px;
+              background-color: #313131;
+              color: #ffffff;
+              font-size: 17px;
+              font-family: "Golos Text", sans-serif;
+              font-weight: 500;
+              border: 0;
+              transition: 300ms;
+              &:hover {
+                background-color: #fed403;
+                color: #313131;
+              }
+            }
+          }
+          .p2,
+          .p3,
+          .p4,
+          .p5 {
+            font-size: 17px;
+            font-family: "Golos Text", sans-serif;
+            font-weight: 400;
+            color: rgb(89 88 93);
+          }
+          .p6,
+          .p7 {
+            font-size: 17px;
+            font-family: "Golos Text", sans-serif;
+            font-weight: 400;
+            color: rgb(89 88 93);
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+}
+#sec_12 {
   width: 100%;
   background-color: #f6f6f6;
   background-image:
@@ -1406,7 +1653,7 @@ header.scrolled .head {
     z-index: -10;
   }
 }
-#sec_12 {
+#sec_13 {
   background-color: #313131;
   .container_1 {
     padding-bottom: 20px;

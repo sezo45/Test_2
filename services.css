@@ -865,7 +865,7 @@ header.scrolled {
     }
   }
 }
-#sec_7 {
+#sec-6 {
   width: 100%;
   background-color: #f6f6f6;
   background-image:
@@ -1020,7 +1020,7 @@ header.scrolled {
     z-index: -10;
   }
 }
-#sec_8 {
+#sec-7 {
   background-color: #313131;
   display: flex;
   flex-direction: column;

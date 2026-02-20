@@ -592,6 +592,9 @@ header.scrolled {
             font-weight: 400;
           }
         }
+        .map{
+          line-height: 0;
+        }
       }
     }
   }
