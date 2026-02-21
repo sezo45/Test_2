@@ -321,6 +321,10 @@ header.scrolled {
       background-color: rgb(246 246 246);
       padding: 40px;
       .contact {
+        @media (max-width: 767px) {
+          flex-direction: column;
+          text-align: center;
+        }
         .imgg {
           width: 75px;
           height: 75px;
