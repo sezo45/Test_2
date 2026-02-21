@@ -660,24 +660,25 @@ header.scrolled {
           background-color: #fed403;
         }
         .social {
-          padding-top: 15px;
-          padding-left: 10px;
-          border-radius: 100%;
-          a {
+          div {
+            width: 35px;
+            height: 35px;
+            background-color: #313131;
+            display: flex;
             justify-content: center;
             align-items: center;
-            padding: 5px;
-            border: 1px solid rgb(56 56 56);
-            border-radius: 100%;
-            svg {
-              width: 20px;
-              height: 20px;
-              color: rgb(255 255 255);
-              transition: 300ms;
-              &:hover {
-                color: #0b0900;
-                background-color: #fed403;
+            border-radius: 50%;
+            border: 1px solid rgb(131, 124, 124);
+            transition: 300ms;
+            &:hover {
+              background-color: #fed403;
+              svg {
+                color: black;
               }
+            }
+            svg {
+              color: white;
+              padding: 5px;
             }
           }
         }
